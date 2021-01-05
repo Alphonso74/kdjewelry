@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import Navbar from "./Navbar";
+import Navbar from "../UI/Navbar";
 
-class Catalog extends Component {
+
+class Contact extends Component {
 
 
     render(){
@@ -18,7 +19,7 @@ class Catalog extends Component {
             </header>
 
             <main>
-                <h1>Catalog</h1>
+                <h1>Contact</h1>
             </main>
 
 
@@ -28,4 +29,4 @@ class Catalog extends Component {
     }
 }
 
-export default Catalog;
+export default Contact;

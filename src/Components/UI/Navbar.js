@@ -22,13 +22,6 @@ class Navbar extends Component{
 
 
 
-
-
-
-
-
-
-
                 <nav className="transparent z-depth-0">
                     <div className="nav-wrapper ">
                         <i className="brand-logo Caveat center white-text "><u>Jewelry By Ky</u></i>

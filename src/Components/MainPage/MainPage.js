@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Navbar from "./Navbar";
+import Navbar from "../UI/Navbar";
 import './MainPageCSS.css';
 
 class MainPage extends Component {

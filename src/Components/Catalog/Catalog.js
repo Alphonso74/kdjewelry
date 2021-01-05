@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Navbar from "./Navbar";
+import Navbar from "../UI/Navbar";
 
 
-class MyOrder extends Component {
+class Catalog extends Component {
 
 
     render(){
@@ -19,7 +19,7 @@ class MyOrder extends Component {
             </header>
 
             <main>
-                <h1>My Order</h1>
+                <h1>Catalog</h1>
             </main>
 
 
@@ -29,4 +29,4 @@ class MyOrder extends Component {
     }
 }
 
-export default MyOrder;
+export default Catalog;
