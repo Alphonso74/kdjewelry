@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Navbar from "./Navbar";
 
 
 class MyOrder extends Component {
@@ -9,14 +10,21 @@ class MyOrder extends Component {
 
 
         return (
-            <div>
+            <body>
 
+            <header className="section container ">
 
+                <Navbar/>
+
+            </header>
+
+            <main>
                 <h1>My Order</h1>
+            </main>
 
 
 
-            </div>
+            </body>
         );
     }
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Navbar from "./Navbar";
 
 
 class Contact extends Component {
@@ -9,14 +10,21 @@ class Contact extends Component {
 
 
         return (
-            <div>
+            <body>
 
+            <header className="section container ">
 
+                <Navbar/>
+
+            </header>
+
+            <main>
                 <h1>Contact</h1>
+            </main>
 
 
 
-            </div>
+            </body>
         );
     }
 }

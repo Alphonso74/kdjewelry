@@ -4,6 +4,7 @@ import MainPage from "./Components/MainPage";
 import Catalog from './Components/Catalog';
 import MyOrder from './Components/MyOrder';
 import Contact from './Components/Contact';
+import Customs from './Components/Customs';
 
 class App extends Component {
 
@@ -23,6 +24,8 @@ class App extends Component {
                 <Route path="/Catalog" exact component={Catalog}/>
                 <Route path="/MyOrder" exact component={MyOrder}/>
                 <Route path="/Contact" exact component={Contact}/>
+                <Route path="/Customs" exact component={Customs}/>
+
 
 
 
