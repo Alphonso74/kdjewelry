@@ -1,19 +1,27 @@
 .Caveat {
 
     font-family: Caveat, cursive;
-    font-size: 24px !important;
+    font-size: 30px !important;
 }
 
 .active {
-    background-color: white;
-    color: black;
+    background-color: black;
 
 }
 
-.navbar-fixed {position: absolute;z-index:999999999;}
+/*.navbar-fixed {position: absolute;z-index:999999999;}*/
 
 
 u {
 
     text-decoration: underline;
+
+}
+
+.backgroundimg {
+
+    background-image: url("../../pictures/jewelry.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

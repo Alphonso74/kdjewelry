@@ -22,17 +22,17 @@ class Navbar extends Component{
 
 
 
-                <nav className="transparent z-depth-0">
+                <nav className="transparent z-depth-0 ">
                     <div className="nav-wrapper ">
-                        <i className="brand-logo Caveat center white-text "><u>Jewelry By Ky</u></i>
+                        <i className="brand-logo Caveat center black-text "><u>Jewelry By Ky</u></i>
                         <a href="/" data-target="mobile-demo" className="sidenav-trigger show-on-large">
-                            <i className="material-icons white-text ">menu</i></a>
-                        <ul className="sidenav sidenav-close grey" id="mobile-demo">
-                                    <li className="active" ><NavLink to='/' exact >Home</NavLink></li>
-                                    <li className="active"><NavLink to='/Catalog' exact >Catalog</NavLink></li>
-                                    <li className="active"><NavLink to='/Contact' exact >Contact Me</NavLink></li>
-                                    <li className="active"><NavLink to='/Customs' exact >Customs</NavLink></li>
-                                    <li className="active"><NavLink to='/MyOrder' exact >My Order</NavLink></li>
+                            <i className="material-icons black-text ">menu</i></a>
+                        <ul className="sidenav sidenav-close  grey " id="mobile-demo">
+                                    <li className="active " ><NavLink className="white-text" to='/' exact >Home</NavLink></li>
+                                    <li className="active"><NavLink className="white-text" to='/Catalog' exact >Catalog</NavLink></li>
+                                    <li className="active"><NavLink className="white-text" to='/Contact' exact >Contact Me</NavLink></li>
+                                    <li className="active"><NavLink className="white-text" to='/Customs' exact >Customs</NavLink></li>
+                                    <li className="active"><NavLink className="white-text" to='/MyOrder' exact >My Order</NavLink></li>
                     </ul>
                     </div>
                 </nav>
