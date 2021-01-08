@@ -5,10 +5,16 @@
 }
 
 .active {
-    background-color: black;
+    /*background-color: black;*/
+    color: black;
 
 }
 
+.activeSide {
+    background-color: white;
+    /*color: black;*/
+
+}
 /*.navbar-fixed {position: absolute;z-index:999999999;}*/
 
 

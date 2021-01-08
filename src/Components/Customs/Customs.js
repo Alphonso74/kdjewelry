@@ -10,9 +10,9 @@ class Customs extends Component {
 
 
         return (
-            <body >
+            <body className="backgroundimg4">
 
-            <header className="section  backgroundimg">
+            <header className="section  container">
 
                 <Navbar />
 
@@ -23,6 +23,7 @@ class Customs extends Component {
                 <br/>
                 <br/>
 
+                <h1 className="center white-text">Customs</h1>
 
 
 

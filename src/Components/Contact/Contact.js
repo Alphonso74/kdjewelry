@@ -10,9 +10,9 @@ class Contact extends Component {
 
 
         return (
-            <body >
+            <body className="backgroundimg3" >
 
-            <header className="section  backgroundimg">
+            <header className="section  container">
 
                 <Navbar />
 
@@ -23,6 +23,7 @@ class Contact extends Component {
                 <br/>
                 <br/>
 
+                <h1 className="center white-text">Contact</h1>
 
 
 

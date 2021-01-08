@@ -10,9 +10,9 @@ class Catalog extends Component {
 
 
         return (
-            <body >
+            <body className="backgroundimg2">
 
-            <header className="section  backgroundimg">
+            <header className="section container ">
 
                 <Navbar />
 
@@ -23,6 +23,7 @@ class Catalog extends Component {
                 <br/>
                 <br/>
 
+                <h1 className="center white-text">Catalog</h1>
 
 
 

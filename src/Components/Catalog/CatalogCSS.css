@@ -1,6 +1,6 @@
-.backgroundimg {
+.backgroundimg2 {
 
-    background-image: url("../../pictures/jewelry3.jpg") ;
+    background-image: url("../../pictures/background.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,3 +21,6 @@ main {
 
     font-family: Caveat, cursive;
 }
+
+
+

@@ -10,9 +10,9 @@ class MyOrder extends Component {
 
 
         return (
-            <body >
+            <body className="backgroundimg5">
 
-            <header className="section  backgroundimg">
+            <header className="section  container">
 
                 <Navbar />
 
@@ -24,6 +24,7 @@ class MyOrder extends Component {
                 <br/>
 
 
+                <h1 className="center white-text">My Order</h1>
 
 
             </main>
