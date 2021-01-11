@@ -23,4 +23,10 @@ main {
 }
 
 
+.headerpicture {
+    background-image: url("../../pictures/nature3.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
+}

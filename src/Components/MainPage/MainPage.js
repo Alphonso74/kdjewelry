@@ -39,10 +39,52 @@ class MainPage extends Component {
 
                 <header className="section container ">
                 <Navbar />
-                <br/>
+                {/*<br/>*/}
+
+                {/*<div className="section headerpicture  ">*/}
+
+                {/*    <div className="row  center-align">*/}
+                {/*        <div className=" col s12">*/}
+                {/*    <span className="white-text Caveat">Jewelry By Ky</span>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+                {/*        <br/>*/}
+
+
+                {/*    </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 </header>
 
                 <main className="transparent z-depth-0">
+
+                    <div className="section headerpicture  ">
+
+                        <div className="row  center-align">
+                            <div className=" col s12">
+                                <span className="white-text Caveat">Custom Designs By Ky</span>
+                                <br/>
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+
+
+                            </div>
+                        </div>
+                    </div>
 
 
                     <h1 className="center-align black-text Caveat">New Designs</h1>
@@ -50,7 +92,7 @@ class MainPage extends Component {
                     <div className="container">
                     <div className="row  s12 ">
 
-                        <div className="col s6 ">
+                        <div className="col s12 hide-on-med-and-up">
                     <div className="slider">
                         <ul className="slides">
                             <li>
@@ -72,7 +114,7 @@ class MainPage extends Component {
                         </div>
 
 
-                            <div className="col s6 ">
+                            <div className="col s12 hide-on-med-and-down">
                                 <div className="slider">
 
 
@@ -112,7 +154,7 @@ class MainPage extends Component {
 
                                             <div className="col s12 center-align ">
               <span className="black-text ">
-                The game of Basketball has been near and dear to my heart from a very young age. This game has taught me many things, and has given me the opportunity to meet and see many people.
+                "My creations are made to be unique and just what your looking for"
                   - Kyleigh Dague
               </span>
                                             </div>
