@@ -6,7 +6,7 @@ import photo from '../../pictures/jewelry1.jpg';
 import photo1 from '../../pictures/jewcrystal.jpg';
 import photo2 from '../../pictures/jewhand2.jpg';
 import photo3 from '../../pictures/jewcone.jpg';
-import link1 from '../../pictures/utube.jpg';
+import link1 from '../../pictures/insta4.jpg';
 import link2 from '../../pictures/newnewghub.png';
 import link3 from '../../pictures/linkedin.png';
 
@@ -35,40 +35,17 @@ class MainPage extends Component {
 
 
         return (
-            <body className="backgroundimg1">
+            <body className="backgroundimg1 ">
 
-                <header className="section container ">
+                <header className="section  headerpicture">
+
                 <Navbar />
                 {/*<br/>*/}
 
-                {/*<div className="section headerpicture  ">*/}
-
-                {/*    <div className="row  center-align">*/}
-                {/*        <div className=" col s12">*/}
-                {/*    <span className="white-text Caveat">Jewelry By Ky</span>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-                {/*        <br/>*/}
-
-
-                {/*    </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                </header>
-
-                <main className="transparent z-depth-0">
-
-                    <div className="section headerpicture  ">
 
                         <div className="row  center-align">
                             <div className=" col s12">
-                                <span className="white-text Caveat">Custom Designs By Ky</span>
+                                {/*<span className="white-text Caveat">Custom Designs </span>*/}
                                 <br/>
 
                                 <br/>
@@ -84,10 +61,35 @@ class MainPage extends Component {
 
                             </div>
                         </div>
-                    </div>
+
+                </header>
+
+                <main className="transparent z-depth-0">
+
+                    {/*<div className="section headerpicture  ">*/}
+
+                    {/*    <div className="row  center-align">*/}
+                    {/*        <div className=" col s12">*/}
+                    {/*            <span className="white-text Caveat">Custom Designs By Ky</span>*/}
+                    {/*            <br/>*/}
+
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
+                    {/*            <br/>*/}
 
 
-                    <h1 className="center-align black-text Caveat">New Designs</h1>
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+
+
+                    <h1 className="center-align white-text Caveat">New Designs</h1>
 
                     <div className="container">
                     <div className="row  s12 ">
@@ -143,7 +145,7 @@ class MainPage extends Component {
                     <div className="section transparent z-depth-0 Caveat">
                         <div className="row container">
                             <div className="col s12 ">
-                                <h2 className="header black-text center-align">About Jewelry By Ky</h2>
+                                <h2 className="header white-text center-align">About Jewelry By Ky</h2>
                                 {/*<p className="grey-text text-darken-3 lighten-3">Parallax is an effect where the background*/}
                                 {/*    content or image in this case, is moved at a different speed than the foreground content*/}
                                 {/*    while scrolling.</p>*/}
@@ -153,7 +155,7 @@ class MainPage extends Component {
                                         <div className="row valign-wrapper">
 
                                             <div className="col s12 center-align ">
-              <span className="black-text ">
+              <span className="white-text ">
                 "My creations are made to be unique and just what your looking for"
                   - Kyleigh Dague
               </span>
@@ -174,7 +176,7 @@ class MainPage extends Component {
 
 
 
-                                <h1 className="black-text ">My Links</h1>
+                                <h1 className="white-text ">My Links</h1>
                                 <pre><code className="language-markup col s12">
         </code></pre>
                             </div>
@@ -183,7 +185,7 @@ class MainPage extends Component {
 
 
 
-                        <div className="row center ">
+                        <div className="row center container">
 
 
 
@@ -215,7 +217,7 @@ class MainPage extends Component {
                                         <img src={link1} alt=""/>
                                     </div>
                                     <div className="card-content center-align">
-                                        <a className="center-align" href="https://www.youtube.com/">Videos!</a>
+                                        <a className="center-align" href="https://www.youtube.com/">Instagram!</a>
 
                                     </div>
 

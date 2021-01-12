@@ -25,12 +25,12 @@ class Navbar extends Component{
             <div>
 
 
-                <nav className=" transparent z-depth-0 ">
-                    <div className="nav-wrapper transparent z-depth-0 ">
+                <nav className=" transparent z-depth-0 container">
+                    <div className="nav-wrapper  ">
 
-                        <i className="brand-logo Caveat center-align black-text ">Jewelry By Ky</i>
+                        <i className="brand-logo  Caveat center-align white-text ">Jewelry By Ky</i>
                         <a href="/" data-target="mobile-demo" className="sidenav-trigger">
-                            <i className="material-icons black-text">menu</i></a>
+                            <i className="material-icons white-text">menu</i></a>
                         <ul className="right hide-on-med-and-down ">
                             <div className="Caveat ">
                                 <li  ><NavLink  to='/' exact >Home</NavLink></li>
@@ -39,9 +39,7 @@ class Navbar extends Component{
                                 <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
                                 <li ><NavLink to='/MyOrder' exact >My Order</NavLink></li>
 
-                                {/*<li><a href="sass.html">Resume</a></li>*/}
-                                {/*<li><a href="badges.html">Blog</a></li>*/}
-                                {/*<li><a href="collapsible.html">Contact Me</a></li>*/}
+
                             </div>
                         </ul>
                     </div>
