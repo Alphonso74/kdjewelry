@@ -34,7 +34,7 @@ main {
 /* set to !important to override Materialize stylesheet */
 
 .carousel {
-    height: 700px !important;
+    height: 300px !important;
 }
 
 /* set to flexbox to center the images with the indicator icons */

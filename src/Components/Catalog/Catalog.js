@@ -6,7 +6,7 @@ import photo from "../../pictures/jewelry1.jpg";
 import photo1 from "../../pictures/jewcrystal.jpg";
 import photo2 from "../../pictures/jewhand2.jpg";
 import photo3 from "../../pictures/jewcone.jpg";
-import link3 from "../../pictures/linkedin.png";
+import link3 from "../../pictures/jewtable.jpg";
 import link1 from "../../pictures/insta4.jpg";
 import M from "materialize-css/dist/js/materialize.min";
 
@@ -17,9 +17,8 @@ class Catalog extends Component {
 
 
         var elems = document.querySelectorAll('.carousel');
-        var instances = M.Slider.init(elems, {
+        var instances = M.Carousel.init(elems, {
             indicators: true,
-            padding: 200,
         });
 
 
@@ -36,38 +35,27 @@ class Catalog extends Component {
 
                 <Navbar />
 
-                <div className="row  center-align">
-                    <div className=" col s12">
-                        <br/>
-                        <br/>
-                        <br/>
-                        <span className="center center-align Caveat black-text">Catalog</span>
-
-
-                    </div>
-                </div>
-
             </header>
 
             <main >
 
-                <div className="center container">
 
-                <div className="carousel " >
 
-                    <a className="carousel-item" href="www.youtube.com" ><img  alt="fsfe" src={photo1}/></a>
+                    <div className="carousel center ">
+                        <span className="center center-align Caveat black-text">Catalog</span>
 
-                    <a className="carousel-item" href="www.youtube.com"><img alt="fsfe" src={photo2}/></a>
+                        <a className="carousel-item" href="#one!"><img
+                            src={photo}/></a>
+                        <a className="carousel-item" href="#two!"><img
+                            src={photo1}/></a>
+                        <a className="carousel-item" href="#three!"><img src={photo2}/></a>
+                        <a className="carousel-item" href="#four!"><img
+                            src={photo3}/></a>
+                        <a className="carousel-item" href="#five!"><img
+                            src={link3}/></a>
+                    </div>
 
-                    <a className="carousel-item" href="www.youtube.com"><img alt="fsfe" src={photo3}/></a>
 
-                    <a className="carousel-item" href="www.youtube.com"><img alt="fsfe" src={photo}/></a>
-
-                    <a className="carousel-item" href="www.youtube.com"><img alt="fsfe" src={photo}/></a>
-
-                </div>
-
-            </div>
 
 
 

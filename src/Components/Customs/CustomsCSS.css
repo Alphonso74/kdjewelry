@@ -33,18 +33,18 @@ main {
 
 /* set to !important to override Materialize stylesheet */
 
-.carousel {
-    height: 700px !important;
-}
+/*.carousel {*/
+/*    height: 700px !important;*/
+/*}*/
 
-/* set to flexbox to center the images with the indicator icons */
-.carousel-item {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
+/*!* set to flexbox to center the images with the indicator icons *!*/
+/*.carousel-item {*/
+/*    display: flex;*/
+/*    align-items: start;*/
+/*    justify-content: center;*/
+/*}*/
 
-.carousel-item img {
-    width: auto !important;
-    height: 350px !important;
-}
+/*.carousel-item img {*/
+/*    width: auto !important;*/
+/*    height: 350px !important;*/
+/*}*/
