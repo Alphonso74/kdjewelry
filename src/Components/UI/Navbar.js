@@ -35,9 +35,10 @@ class Navbar extends Component{
                             <div className="Caveat ">
                                 <li  ><NavLink  to='/' exact >Home</NavLink></li>
                                 <li ><NavLink  to='/Catalog' exact >Catalog</NavLink></li>
-                                <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
                                 <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
                                 <li ><NavLink to='/MyOrder' exact >My Order</NavLink></li>
+                                <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
+
 
 
                             </div>
@@ -48,9 +49,10 @@ class Navbar extends Component{
                 <ul className="sidenav sidenav-close grey " id="mobile-demo">
                     <li   ><NavLink  to='/' exact >Home</NavLink></li>
                     <li ><NavLink  to='/Catalog' exact >Catalog</NavLink></li>
-                    <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
                     <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
                     <li ><NavLink  to='/MyOrder' exact >My Order</NavLink></li>
+                    <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
+
                 </ul>
 
 

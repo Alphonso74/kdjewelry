@@ -1,6 +1,6 @@
-.backgroundimg2 {
+.backgroundimg12 {
 
-    background-image: url("../../pictures/background.jpg") ;
+    background-image: url("../../pictures/wedding-2544405.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,4 +23,28 @@ main {
 }
 
 
+.headerpicture1 {
+    background-image: url("../../pictures/thunderstorm-3625405.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
+}
+
+/* set to !important to override Materialize stylesheet */
+
+.carousel {
+    height: 700px !important;
+}
+
+/* set to flexbox to center the images with the indicator icons */
+.carousel-item {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: auto !important;
+    height: 350px !important;
+}

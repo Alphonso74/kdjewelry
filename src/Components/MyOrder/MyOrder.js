@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import Navbar from "../UI/Navbar";
 import './MyOrderCSS.css';
+import photo1 from "../../pictures/jewcrystal.jpg";
+import photo2 from "../../pictures/jewhand2.jpg";
+import photo3 from "../../pictures/jewcone.jpg";
+import photo from "../../pictures/jewelry1.jpg";
 
 class MyOrder extends Component {
 
@@ -10,32 +14,43 @@ class MyOrder extends Component {
 
 
         return (
-            <body className="backgroundimg5">
+            <body className="backgroundimg12345 ">
 
-            <header className="section  container">
+            <header className="section ">
 
                 <Navbar />
 
+                <div className="row  center-align">
+                    <div className=" col s12">
+                        <br/>
+                        <br/>
+                        <br/>
+                        <span className="center center-align Caveat black-text">My Order</span>
+
+
+                    </div>
+                </div>
+
             </header>
 
-            <main>
-                {/*<h1 className="white-text">Main Page</h1>*/}
-                <br/>
-                <br/>
+            <main >
 
 
-                <h1 className="center white-text">My Order</h1>
+
+
+
 
 
             </main>
 
-            <footer className="page-footer transparent Caveat">
+            <footer className="page-footer black Caveat">
                 <div className="container">
                     <div className="row">
-                        <div className="col  s6 ">
-                            <h5 className="white-text">Ky Ky</h5>
-                            <p className="grey-text text-lighten-4">Custom Rings</p>
-                            <p className="grey-text text-lighten-4">Place An Order!</p>
+                        <div className="col  s6 center-align">
+                            <h5 className="white-text">Rings</h5>
+                            <h5 className="white-text ">Braclets</h5>
+                            <h5 className="white-text ">Necklaces</h5>
+
                         </div>
                         <div className="col  s6 center-align">
                             <h5 className="white-text">Contact Me About Customs</h5>
