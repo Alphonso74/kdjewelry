@@ -50,13 +50,8 @@ class MainPage extends Component {
 
                                 <br/>
                                 <br/>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
+                                <h1 className="center-align center Caveat white-text sizeFont">Welcome!</h1>
+
 
 
                             </div>

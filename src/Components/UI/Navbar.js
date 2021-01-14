@@ -34,8 +34,9 @@ class Navbar extends Component{
                         <ul className="right hide-on-med-and-down ">
                             <div className="Caveat ">
                                 <li  ><NavLink  to='/' exact >Home</NavLink></li>
-                                <li ><NavLink  to='/Catalog' exact >Catalog</NavLink></li>
+                                <li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>
                                 <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
+                                <li ><NavLink to='/Reviews' exact >Reviews</NavLink></li>
                                 <li ><NavLink to='/MyOrder' exact >My Order</NavLink></li>
                                 <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
 
@@ -48,8 +49,9 @@ class Navbar extends Component{
 
                 <ul className="sidenav sidenav-close grey " id="mobile-demo">
                     <li   ><NavLink  to='/' exact >Home</NavLink></li>
-                    <li ><NavLink  to='/Catalog' exact >Catalog</NavLink></li>
+                    <li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>
                     <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
+                    <li ><NavLink to='/Reviews' exact >Reviews</NavLink></li>
                     <li ><NavLink  to='/MyOrder' exact >My Order</NavLink></li>
                     <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
 

@@ -24,9 +24,14 @@ main {
 
 
 .headerpicture {
-    background-image: url("../../pictures/tree-838667.jpg") ;
+    background-image: url("../../pictures/beach-1838798.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
+}
+
+.sizeFont {
+
+    font-size: 60px !important;
 }

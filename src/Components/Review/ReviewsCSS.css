@@ -1,6 +1,6 @@
-.backgroundimg12 {
+.backgroundimg1234 {
 
-    background-image: url("../../pictures/wedding-2544405.jpg") ;
+    background-image: url("../../pictures/pet-5728249.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,20 +31,30 @@ main {
 
 }
 
-/* set to !important to override Materialize stylesheet */
-
-.carousel {
-    height: 250px !important;
+/*Creates table with scrollable tbody*/
+tbody {
+    display:block;
+    height:150px;
+    overflow:auto;
+}
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+thead {
+    width: calc( 100% - 1em )
+}
+table {
+    width:100%;
 }
 
-/* set to flexbox to center the images with the indicator icons */
-.carousel-item {
-    display: flex;
-    align-items: start;
-    justify-content: center;
+.select-dropdown {
+
+    color: white
 }
 
-.carousel-item img {
-    width: auto !important;
-    height: 300px !important;
+
+.labelTitle {
+    font-size: 14px !important;
 }

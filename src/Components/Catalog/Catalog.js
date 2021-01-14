@@ -31,29 +31,86 @@ class Catalog extends Component {
         return (
             <body className="backgroundimg12 ">
 
-            <header>
+            <header className="section">
 
                 <Navbar />
 
+                {/*<h1 className="center  Caveat black-text">Catalog</h1>*/}
             </header>
 
             <main >
+                <h1 className="center  Caveat white-text">Rings</h1>
 
 
 
                     <div className="carousel center ">
-                        <span className="center center-align Caveat black-text">Catalog</span>
+
 
                         <a className="carousel-item" href="#one!"><img
-                            src={photo}/></a>
-                        <a className="carousel-item" href="#two!"><img
                             src={photo1}/></a>
+                        <a className="carousel-item" href="#two!"><img
+                            src={photo}/></a>
                         <a className="carousel-item" href="#three!"><img src={photo2}/></a>
                         <a className="carousel-item" href="#four!"><img
                             src={photo3}/></a>
                         <a className="carousel-item" href="#five!"><img
                             src={link3}/></a>
                     </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+
+                <h1 className="center  Caveat white-text">Bracelets</h1>
+
+
+
+                <div className="carousel center ">
+
+
+                    <a className="carousel-item" href="#one!"><img
+                        src={photo3}/></a>
+                    <a className="carousel-item" href="#two!"><img
+                        src={photo1}/></a>
+                    <a className="carousel-item" href="#three!"><img src={photo2}/></a>
+                    <a className="carousel-item" href="#four!"><img
+                        src={photo}/></a>
+                    <a className="carousel-item" href="#five!"><img
+                        src={link3}/></a>
+                </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+                <h1 className="center  Caveat white-text">Necklaces</h1>
+
+
+
+                <div className="carousel center ">
+
+
+                    <a className="carousel-item" href="#one!"><img
+                        src={link3}/></a>
+                    <a className="carousel-item" href="#two!"><img
+                        src={photo1}/></a>
+                    <a className="carousel-item" href="#three!"><img src={photo2}/></a>
+                    <a className="carousel-item" href="#four!"><img
+                        src={photo3}/></a>
+                    <a className="carousel-item" href="#five!"><img
+                        src={photo}/></a>
+                </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
 
 
