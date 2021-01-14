@@ -105,7 +105,7 @@ class Reviews extends Component {
 
 
         return (
-            <body className="backgroundimg1234 ">
+            <body className="backgroundimg123456 ">
 
             <header className="section ">
 
@@ -152,35 +152,19 @@ class Reviews extends Component {
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Rent</td>
-                            <td>$640</td>
-                            <td>Rent</td>
+                            <td>Alphonso Mckenzie</td>
+                            <td>Necklace</td>
+                            <td>Amazing!</td>
 
                         </tr>
                         <tr>
-                            <td>Utilities</td>
-                            <td>$56.12</td>
-                            <td>Rent</td>
+                            <td>Alphonso Mckenzie</td>
+                            <td>Ring</td>
+                            <td>Awesome Stuff!</td>
 
                         </tr>
-                        <tr>
-                            <td>Foo</td>
-                            <td>$45</td>
-                            <td>Rent</td>
 
-                        </tr>
-                        <tr>
-                            <td>Foo</td>
-                            <td>$45</td>
-                            <td>Foo</td>
 
-                        </tr>
-                        <tr>
-                            <td>Foo</td>
-                            <td>$45</td>
-                            <td>Foo</td>
-
-                        </tr>
                         </tbody>
                     </table>
                 </div>
