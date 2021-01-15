@@ -139,7 +139,7 @@ class Reviews extends Component {
 
                 <div className="card transparent z-depth-0">
                 {/*<body>*/}
-                <div class="col s12 m6 l white container">
+                <div class="col s12 m6 l white-text container">
 
                     <table>
                         <thead>
@@ -160,7 +160,32 @@ class Reviews extends Component {
                         <tr>
                             <td>Alphonso Mckenzie</td>
                             <td>Ring</td>
-                            <td>Awesome Stuff!</td>
+                            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>
+
+                        </tr>
+                        <tr>
+                            <td>Alphonso Mckenzie</td>
+                            <td>Necklace</td>
+                            <td>Amazing!</td>
+
+                        </tr>
+                        <tr>
+                            <td>Alphonso Mckenzie</td>
+                            <td>Ring</td>
+                            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Alphonso Mckenzie</td>
+                            <td>Necklace</td>
+                            <td>Amazing!</td>
+
+                        </tr>
+                        <tr>
+                            <td>Alphonso Mckenzie</td>
+                            <td>Ring</td>
+                            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>
 
                         </tr>
 

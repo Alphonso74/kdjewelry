@@ -37,8 +37,8 @@ class Navbar extends Component{
                                 <li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>
                                 <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
                                 <li ><NavLink to='/Reviews' exact >Reviews</NavLink></li>
-                                <li ><NavLink to='/MyOrder' exact >My Order</NavLink></li>
-                                <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
+                                <li ><NavLink to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>
+                                <li ><NavLink  to='/Contact' exact >Contact Me </NavLink></li>
 
 
 
@@ -52,7 +52,7 @@ class Navbar extends Component{
                     <li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>
                     <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
                     <li ><NavLink to='/Reviews' exact >Reviews</NavLink></li>
-                    <li ><NavLink  to='/MyOrder' exact >My Order</NavLink></li>
+                    <li ><NavLink  to='/MyOrder' exact >My Cart</NavLink></li>
                     <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
 
                 </ul>
