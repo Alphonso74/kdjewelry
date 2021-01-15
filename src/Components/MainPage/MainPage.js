@@ -7,7 +7,7 @@ import photo1 from '../../pictures/jewcrystal.jpg';
 import photo2 from '../../pictures/jewhand2.jpg';
 import photo3 from '../../pictures/jewcone.jpg';
 import link1 from '../../pictures/insta4.jpg';
-import link2 from '../../pictures/newnewghub.png';
+// import link2 from '../../pictures/newnewghub.png';
 import link3 from '../../pictures/linkedin.png';
 
 

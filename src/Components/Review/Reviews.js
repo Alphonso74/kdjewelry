@@ -4,12 +4,14 @@ import './ReviewsCSS.css';
 import M from "materialize-css/dist/js/materialize.min";
 import photo from '../../pictures/jewelry1.jpg';
 import photo1 from '../../pictures/jewcrystal.jpg';
-import photo2 from '../../pictures/jewhand2.jpg';
+// import photo2 from '../../pictures/jewhand2.jpg';
 import photo3 from '../../pictures/jewcone.jpg';
-import link1 from '../../pictures/insta4.jpg';
-import link2 from '../../pictures/newnewghub.png';
-import link3 from '../../pictures/linkedin.png';
+// import link1 from '../../pictures/insta4.jpg';
+// import link2 from '../../pictures/newnewghub.png';
+// import link3 from '../../pictures/linkedin.png';
 import axios from '../../axios-reviews';
+import {onLog} from "firebase";
+import Review from "./Review";
 
 class Reviews extends Component {
 
@@ -20,19 +22,50 @@ class Reviews extends Component {
         item: '',
         message: '',
         sentMessage: false,
-        modal: null
+        modal: null,
+        reviews: []
 
 
     };
 
 
+
+
     componentDidMount() {
         // console.log("Poop");
 
-        var elems = document.querySelectorAll('.modal');
+        // var elems = document.querySelectorAll('.modal');
 
         var elems1 = document.querySelectorAll('select');
         var instances = M.FormSelect.init(elems1, {color: "white"});
+
+        // axios.get("https://jewelry-byky-default-rtdb.firebaseio.com/reviews")
+        //     .then(response => {
+        //         console.log("help " +response)
+        //     })
+
+
+        // axios.get('/reviews.json' )
+        //     .then(res => {
+        //         const fetchedOrders = [];
+        //         for (let key in res.data) {
+        //             // console.log(res.data);
+        //
+        //             fetchedOrders.push(
+        //                 {
+        //                     ...res.data[key],
+        //                     id: key
+        //                 });
+        //             console.log(fetchedOrders);
+        //
+        //         }
+        //         // dispatch(fetchOrdersSuccess(fetchedOrders));
+        //     })
+        //     .catch(err => {
+        //
+        //         console.log(err)
+        //         // dispatch(fetchOrdersFail(err))
+        //     })
 
 
     }
@@ -86,6 +119,8 @@ class Reviews extends Component {
     }
 
     postReview = () => {
+        window.event.preventDefault();
+
 
         const review = {
 
@@ -95,13 +130,87 @@ class Reviews extends Component {
         }
 
         axios.post('/reviews.json', review)
-            .then(response => console.log(response))
-            .catch(error => console.log(error))
+            .then(response => {
+                // console.log(response);
+                document.getElementById("formyform1").reset();
+
+                const elem = document.getElementById('modal2');
+                const instance = M.Modal.init(elem, {dismissible: true});
+                instance.open();
+
+                }
+            )
+            .catch(error => {
+                    console.log(error);
+                document.getElementById("formyform1").reset();
+
+                const elem = document.getElementById('modal3');
+                const instance = M.Modal.init(elem, {dismissible: true});
+                instance.open();
+                    })
+
+
+
     }
 
 
     render(){
+        const fetchedOrders = [];
 
+        let orders = null;
+
+        axios.get('/reviews.json' )
+            .then(res => {
+
+                for (let key in res.data) {
+                    // console.log(res.data);
+
+                    fetchedOrders.push(
+                        {
+                        ...res.data[key],
+                        id: key
+                    });
+
+                    // this.state.reviews = fetchedOrders;
+
+                    // console.log(this.state.reviews)
+
+                  orders =  fetchedOrders.map(review => (
+
+
+                        <Review
+                            name={review.name}
+                            item={review.item}
+                            message={review.message}
+                            key={review.id}
+                            // key={+order.id}
+                        />
+                    ))
+                    console.log(fetchedOrders);
+
+                }
+                // dispatch(fetchOrdersSuccess(fetchedOrders));
+            })
+            .catch(err => {
+
+                console.log(err)
+                // dispatch(fetchOrdersFail(err))
+            })
+
+
+        // let displayReviews = [];
+        // console.log(fetchedOrders + "fewf")
+        //
+        // displayReviews = fetchedOrders.map(review => (
+        //
+        //
+        //     <div>
+        //         <h1>{review.name} </h1>
+        //
+        //     </div>
+        // ))
+        //
+        // console.log(displayReviews + "fewf")
 
 
         return (
@@ -124,22 +233,30 @@ class Reviews extends Component {
 
             </header>
 
-            <main >
+            <main>
 
 
-                <div id="modal1" className="modal modal-fixed-footer Caveat">
+                <div id="modal2" className="modal modal-fixed-footer Caveat">
                     <div className="modal-content center-align">
-                        <h4>Thanks For The Message!</h4>
-                        <p>This message will go directly to Kyleigh, and she will contact you through the email provided.</p>
-                        <p>Thanks!</p>
+                        <h4>Thanks For The Review!</h4>
+                        <p>Your feedback matter !</p>
                         <i className="material-icons centerAlign">thumb_up</i>
+                    </div>
+
+                </div>
+
+                <div id="modal3" className="modal modal-fixed-footer Caveat">
+                    <div className="modal-content center-align">
+                        <h4>Something went wrong.....</h4>
+
+                        <i className="material-icons centerAlign">thumb_down</i>
                     </div>
 
                 </div>
 
                 <div className="card transparent z-depth-0">
                 {/*<body>*/}
-                <div class="col s12 m6 l white-text container">
+                <div className="col s12 m6 l white-text container">
 
                     <table>
                         <thead>
@@ -194,6 +311,8 @@ class Reviews extends Component {
                     </table>
                 </div>
                 </div>
+
+
             {/*    </body>*/}
             {/*</html>*/}
 
@@ -201,7 +320,7 @@ class Reviews extends Component {
 
 
                 <div className="  Caveat card transparent z-depth-0">
-                    <form className="row s12 center-align container" id="formyform" onSubmit={this.postReview}>
+                    <form className="row s12 center-align container" id="formyform1" onSubmit={this.postReview}>
 
                             <div className="input-field row s12">
                                 <input id="name" type="text" required=" " className="validate white-text" onChange={this.nameChange}/>
@@ -215,7 +334,7 @@ class Reviews extends Component {
                         {/*</div>*/}
 
                         <div className="input-field row s12   ">
-                            <select className="icons green-text" onChange={this.itemChange}>
+                            <select className="icons green-text" id="item-selector" onChange={this.itemChange}>
                                 <option className="" value="" disabled selected>Choose your option</option>
                                 <option value="Ring" data-icon={photo3} className="left">Ring</option>
                                 <option value="Necklace" data-icon={photo} className="left">Necklace</option>
@@ -240,6 +359,8 @@ class Reviews extends Component {
 
                     </form>
                 </div>
+
+                {orders}
 
 
             </main>

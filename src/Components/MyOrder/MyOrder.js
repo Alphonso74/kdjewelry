@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Navbar from "../UI/Navbar";
 import './MyOrderCSS.css';
-import photo1 from "../../pictures/jewcrystal.jpg";
-import photo2 from "../../pictures/jewhand2.jpg";
-import photo3 from "../../pictures/jewcone.jpg";
-import photo from "../../pictures/jewelry1.jpg";
+// import photo1 from "../../pictures/jewcrystal.jpg";
+// import photo2 from "../../pictures/jewhand2.jpg";
+// import photo3 from "../../pictures/jewcone.jpg";
+// import photo from "../../pictures/jewelry1.jpg";
 
 class MyOrder extends Component {
 
