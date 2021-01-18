@@ -12,6 +12,7 @@ import photo3 from '../../pictures/jewcone.jpg';
 import axios from '../../axios-reviews';
 import {onLog} from "firebase";
 import Review from "./Review";
+import firebase from '../../firebase';
 
 class Reviews extends Component {
 
@@ -39,34 +40,25 @@ class Reviews extends Component {
         var elems1 = document.querySelectorAll('select');
         var instances = M.FormSelect.init(elems1, {color: "white"});
 
-        // axios.get("https://jewelry-byky-default-rtdb.firebaseio.com/reviews")
-        //     .then(response => {
-        //         console.log("help " +response)
-        //     })
+        const reviewref = firebase.database().ref('reviews');
+        reviewref.on('value', (snapshot) => {
 
+            let reviews = snapshot.val();
+            let newState = [];
 
-        // axios.get('/reviews.json' )
-        //     .then(res => {
-        //         const fetchedOrders = [];
-        //         for (let key in res.data) {
-        //             // console.log(res.data);
-        //
-        //             fetchedOrders.push(
-        //                 {
-        //                     ...res.data[key],
-        //                     id: key
-        //                 });
-        //             console.log(fetchedOrders);
-        //
-        //         }
-        //         // dispatch(fetchOrdersSuccess(fetchedOrders));
-        //     })
-        //     .catch(err => {
-        //
-        //         console.log(err)
-        //         // dispatch(fetchOrdersFail(err))
-        //     })
+            for( let review in reviews ) {
+                newState.push({
+                    id: review,
+                    name: reviews[review].name,
+                    item: reviews[review].item,
+                    message: reviews[review].message
+                });
+            }
 
+            this.setState({
+                reviews : newState
+            })
+        } )
 
     }
 
@@ -155,62 +147,6 @@ class Reviews extends Component {
 
 
     render(){
-        const fetchedOrders = [];
-
-        let orders = null;
-
-        axios.get('/reviews.json' )
-            .then(res => {
-
-                for (let key in res.data) {
-                    // console.log(res.data);
-
-                    fetchedOrders.push(
-                        {
-                        ...res.data[key],
-                        id: key
-                    });
-
-                    // this.state.reviews = fetchedOrders;
-
-                    // console.log(this.state.reviews)
-
-                  orders =  fetchedOrders.map(review => (
-
-
-                        <Review
-                            name={review.name}
-                            item={review.item}
-                            message={review.message}
-                            key={review.id}
-                            // key={+order.id}
-                        />
-                    ))
-                    console.log(fetchedOrders);
-
-                }
-                // dispatch(fetchOrdersSuccess(fetchedOrders));
-            })
-            .catch(err => {
-
-                console.log(err)
-                // dispatch(fetchOrdersFail(err))
-            })
-
-
-        // let displayReviews = [];
-        // console.log(fetchedOrders + "fewf")
-        //
-        // displayReviews = fetchedOrders.map(review => (
-        //
-        //
-        //     <div>
-        //         <h1>{review.name} </h1>
-        //
-        //     </div>
-        // ))
-        //
-        // console.log(displayReviews + "fewf")
 
 
         return (
@@ -236,10 +172,55 @@ class Reviews extends Component {
             <main>
 
 
+                {/*{this.state.reviews.map((review) => {*/}
+                {/*    return (*/}
+
+                    <div className="card transparent z-depth-0">
+                    {/*/!*<body>*!/*/}
+                    <div className="col s12 m6 l white-text container">
+
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Item</th>
+                                <th>Review</th>
+
+                            </tr>
+                           </thead>
+                            <tbody>
+                            {this.state.reviews.map((review) => {
+
+                                return (
+
+                                <tr>
+
+                                    <td>{review.name}</td>
+                                    <td>{review.item}</td>
+                                    <td>{review.message}</td>
+
+                                </tr>
+
+                                )
+                            })
+                            }
+
+
+
+                           </tbody>
+                        </table>
+                    </div>
+                    </div>
+
+
+
+
+
+
                 <div id="modal2" className="modal modal-fixed-footer Caveat">
                     <div className="modal-content center-align">
                         <h4>Thanks For The Review!</h4>
-                        <p>Your feedback matter !</p>
+                        <p>Your feedback matters!</p>
                         <i className="material-icons centerAlign">thumb_up</i>
                     </div>
 
@@ -254,63 +235,63 @@ class Reviews extends Component {
 
                 </div>
 
-                <div className="card transparent z-depth-0">
-                {/*<body>*/}
-                <div className="col s12 m6 l white-text container">
+                {/*<div className="card transparent z-depth-0">*/}
+                {/*/!*<body>*!/*/}
+                {/*<div className="col s12 m6 l white-text container">*/}
 
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Customer</th>
-                            <th>Item</th>
-                            <th>Review</th>
+                {/*    <table>*/}
+                {/*        <thead>*/}
+                {/*        <tr>*/}
+                {/*            <th>Customer</th>*/}
+                {/*            <th>Item</th>*/}
+                {/*            <th>Review</th>*/}
 
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Alphonso Mckenzie</td>
-                            <td>Necklace</td>
-                            <td>Amazing!</td>
+                {/*        </tr>*/}
+                {/*        </thead>*/}
+                {/*        <tbody>*/}
+                {/*        <tr>*/}
+                {/*            <td>Alphonso Mckenzie</td>*/}
+                {/*            <td>Necklace</td>*/}
+                {/*            <td>Amazing!</td>*/}
 
-                        </tr>
-                        <tr>
-                            <td>Alphonso Mckenzie</td>
-                            <td>Ring</td>
-                            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>
+                {/*        </tr>*/}
+                {/*        <tr>*/}
+                {/*            <td>Alphonso Mckenzie</td>*/}
+                {/*            <td>Ring</td>*/}
+                {/*            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>*/}
 
-                        </tr>
-                        <tr>
-                            <td>Alphonso Mckenzie</td>
-                            <td>Necklace</td>
-                            <td>Amazing!</td>
+                {/*        </tr>*/}
+                {/*        <tr>*/}
+                {/*            <td>Alphonso Mckenzie</td>*/}
+                {/*            <td>Necklace</td>*/}
+                {/*            <td>Amazing!</td>*/}
 
-                        </tr>
-                        <tr>
-                            <td>Alphonso Mckenzie</td>
-                            <td>Ring</td>
-                            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>
+                {/*        </tr>*/}
+                {/*        <tr>*/}
+                {/*            <td>Alphonso Mckenzie</td>*/}
+                {/*            <td>Ring</td>*/}
+                {/*            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>*/}
 
-                        </tr>
+                {/*        </tr>*/}
 
-                        <tr>
-                            <td>Alphonso Mckenzie</td>
-                            <td>Necklace</td>
-                            <td>Amazing!</td>
+                {/*        <tr>*/}
+                {/*            <td>Alphonso Mckenzie</td>*/}
+                {/*            <td>Necklace</td>*/}
+                {/*            <td>Amazing!</td>*/}
 
-                        </tr>
-                        <tr>
-                            <td>Alphonso Mckenzie</td>
-                            <td>Ring</td>
-                            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>
+                {/*        </tr>*/}
+                {/*        <tr>*/}
+                {/*            <td>Alphonso Mckenzie</td>*/}
+                {/*            <td>Ring</td>*/}
+                {/*            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>*/}
 
-                        </tr>
+                {/*        </tr>*/}
 
 
-                        </tbody>
-                    </table>
-                </div>
-                </div>
+                {/*        </tbody>*/}
+                {/*    </table>*/}
+                {/*</div>*/}
+                {/*</div>*/}
 
 
             {/*    </body>*/}
@@ -360,7 +341,9 @@ class Reviews extends Component {
                     </form>
                 </div>
 
-                {orders}
+                {/*{orders}*/}
+
+
 
 
             </main>
