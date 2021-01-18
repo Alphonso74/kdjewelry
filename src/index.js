@@ -6,13 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize';
 import {BrowserRouter} from "react-router-dom";
+import {Provider} from 'react-redux';
+import {createStore} from "redux";
+import reducer from "./store/reducer";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
+const store = createStore(reducer);
 
 const app = (
+    <Provider store={store}>
     <BrowserRouter>
         <App/>
     </BrowserRouter>
+    </Provider>
 );
 
 ReactDOM.render(

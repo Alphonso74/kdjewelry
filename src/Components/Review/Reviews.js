@@ -62,13 +62,6 @@ class Reviews extends Component {
 
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-
-        // console.log(this.state.email);
-
-
-
-    }
 
 
 
@@ -125,6 +118,8 @@ class Reviews extends Component {
             .then(response => {
                 // console.log(response);
                 document.getElementById("formyform1").reset();
+                // document.getElementById("item-selector").reset();
+
 
                 const elem = document.getElementById('modal2');
                 const instance = M.Modal.init(elem, {dismissible: true});
@@ -135,6 +130,7 @@ class Reviews extends Component {
             .catch(error => {
                     console.log(error);
                 document.getElementById("formyform1").reset();
+                // document.getElementById("item-selector").reset();
 
                 const elem = document.getElementById('modal3');
                 const instance = M.Modal.init(elem, {dismissible: true});
@@ -235,68 +231,8 @@ class Reviews extends Component {
 
                 </div>
 
-                {/*<div className="card transparent z-depth-0">*/}
-                {/*/!*<body>*!/*/}
-                {/*<div className="col s12 m6 l white-text container">*/}
 
-                {/*    <table>*/}
-                {/*        <thead>*/}
-                {/*        <tr>*/}
-                {/*            <th>Customer</th>*/}
-                {/*            <th>Item</th>*/}
-                {/*            <th>Review</th>*/}
-
-                {/*        </tr>*/}
-                {/*        </thead>*/}
-                {/*        <tbody>*/}
-                {/*        <tr>*/}
-                {/*            <td>Alphonso Mckenzie</td>*/}
-                {/*            <td>Necklace</td>*/}
-                {/*            <td>Amazing!</td>*/}
-
-                {/*        </tr>*/}
-                {/*        <tr>*/}
-                {/*            <td>Alphonso Mckenzie</td>*/}
-                {/*            <td>Ring</td>*/}
-                {/*            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>*/}
-
-                {/*        </tr>*/}
-                {/*        <tr>*/}
-                {/*            <td>Alphonso Mckenzie</td>*/}
-                {/*            <td>Necklace</td>*/}
-                {/*            <td>Amazing!</td>*/}
-
-                {/*        </tr>*/}
-                {/*        <tr>*/}
-                {/*            <td>Alphonso Mckenzie</td>*/}
-                {/*            <td>Ring</td>*/}
-                {/*            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>*/}
-
-                {/*        </tr>*/}
-
-                {/*        <tr>*/}
-                {/*            <td>Alphonso Mckenzie</td>*/}
-                {/*            <td>Necklace</td>*/}
-                {/*            <td>Amazing!</td>*/}
-
-                {/*        </tr>*/}
-                {/*        <tr>*/}
-                {/*            <td>Alphonso Mckenzie</td>*/}
-                {/*            <td>Ring</td>*/}
-                {/*            <td>Awesome Stuff! I really like how the ring fit my hand, and super nice material!</td>*/}
-
-                {/*        </tr>*/}
-
-
-                {/*        </tbody>*/}
-                {/*    </table>*/}
-                {/*</div>*/}
-                {/*</div>*/}
-
-
-            {/*    </body>*/}
-            {/*</html>*/}
-
+                <div className="container" >
                 <h1 className="center white-text Caveat header">Write A Review</h1>
 
 
@@ -339,6 +275,7 @@ class Reviews extends Component {
                             className="material-icons right">send</i>Submit Review</button>
 
                     </form>
+                </div>
                 </div>
 
                 {/*{orders}*/}

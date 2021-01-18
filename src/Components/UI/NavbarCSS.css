@@ -31,3 +31,11 @@ u {
     background-size: cover;
     background-position: center;
 }
+
+.navimg {
+
+    background-image: url("../../pictures/sunrise-1014711.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

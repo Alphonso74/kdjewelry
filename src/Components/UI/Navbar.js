@@ -47,13 +47,13 @@ class Navbar extends Component{
                     </div>
                 </nav>
 
-                <ul className="sidenav sidenav-close grey " id="mobile-demo">
-                    <li   ><NavLink  to='/' exact >Home</NavLink></li>
-                    <li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>
-                    <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
-                    <li ><NavLink to='/Reviews' exact >Reviews</NavLink></li>
-                    <li ><NavLink  to='/MyOrder' exact >My Cart</NavLink></li>
-                    <li ><NavLink  to='/Contact' exact >Contact Me</NavLink></li>
+                <ul className="sidenav sidenav-close  navimg" id="mobile-demo">
+                    <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>
+                    <li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>
+                    <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs</NavLink></li>
+                    <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>
+                    <li ><NavLink className="white-text hoverable" to='/MyOrder' exact >My Cart</NavLink></li>
+                    <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>
 
                 </ul>
 

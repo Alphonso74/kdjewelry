@@ -5,6 +5,8 @@ import './CustomsCSS.css';
 // import photo2 from "../../pictures/jewhand2.jpg";
 // import photo3 from "../../pictures/jewcone.jpg";
 // import photo from "../../pictures/jewelry1.jpg";
+import {connect} from 'react-redux';
+import * as actionTypes from '../../store/actions';
 
 class Customs extends Component {
 
@@ -72,4 +74,18 @@ class Customs extends Component {
     }
 }
 
-export default Customs;
+const mapStateToProps = state => {
+    return {
+            items: state.Items,
+            numItems: state.numberOfItems,
+            currPrice: state.totalPrice
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  })
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Customs);
