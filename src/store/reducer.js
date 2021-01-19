@@ -6,6 +6,10 @@ const initialState = {
     numberOfItems: 0,
     Items: [],
     totalPrice: 0
+};
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
 }
 
 const deleteItem = (state,action) => {
@@ -15,7 +19,7 @@ const deleteItem = (state,action) => {
         numberOfItems: state.numberOfItems - 1,
         totalPrice: state.totalPrice - action.itemPrice})
 
-}
+};
 
 const reducer = (state = initialState, action) => {
 
@@ -33,13 +37,24 @@ const reducer = (state = initialState, action) => {
             // };
 
             return updateObject(state, {Items: state.Items.concat({
-                    id: state.numberOfItems,
+                    id: getRandomInt(1000),
                     itemName: action.itemName,
-                    itemPrice: action.itemPrice})})
+                    itemPrice: action.itemPrice}),
+                    numberOfItems: state.numberOfItems + 1,
+                    totalPrice: action.itemPrice + state.totalPrice });
+
 
         case actionTypes.REMOVE_ITEMFROMCART:
 
-                return deleteItem(state,action);
+            const updatedArray = state.Items.filter(items  => items.id !== action.itemID);
+            console.log(action.itemID)
+            return {
+                ...state,
+                Items: updatedArray,
+                numberOfItems: state.numberOfItems - 1,
+                totalPrice: action.itemPrice - state.totalPrice
+
+            }
 
 
 

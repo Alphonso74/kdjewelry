@@ -11,6 +11,13 @@ import * as actionTypes from '../../store/actions';
 class Customs extends Component {
 
 
+    addItem = () => {
+
+
+       return  this.props.onItemAdded("Necklace Silver Wire", 12);
+
+    }
+
     render(){
 
 
@@ -37,6 +44,18 @@ class Customs extends Component {
 
             <main >
 
+
+                <div className="center">
+                <button className="waves-effect waves-light btn center center-align" onClick={this.addItem}>Test Button</button>
+
+                    <h1 className="white-text">{this.props.currPrice}</h1>
+                </div>
+
+                {/*<div className="center">*/}
+                {/*    <button className="waves-effect waves-light btn center center-align" onClick={this.addItem}>Test Button</button>*/}
+
+                {/*    <h1 className="white-text">{this.props.currPrice}</h1>*/}
+                {/*</div>*/}
 
 
 
@@ -84,7 +103,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  })
+        onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  }),
+        onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  })
+
     }
 }
 

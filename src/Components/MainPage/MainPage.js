@@ -39,7 +39,7 @@ class MainPage extends Component {
 
                 <header className="section  headerpicture">
 
-                <Navbar />
+                <Navbar  />
                 {/*<br/>*/}
 
 
