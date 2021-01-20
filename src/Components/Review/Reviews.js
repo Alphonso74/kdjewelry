@@ -13,6 +13,8 @@ import axios from '../../axios-reviews';
 import {onLog} from "firebase";
 import Review from "./Review";
 import firebase from '../../firebase';
+import {connect} from 'react-redux';
+import * as actionTypes from '../../store/actions';
 
 class Reviews extends Component {
 
@@ -150,7 +152,7 @@ class Reviews extends Component {
 
             <header className="section ">
 
-                <Navbar />
+                <Navbar numItems={this.props.numItems}/>
 
                 <div className="section  Caveat white-text">
                     <div className="row s12 container center-align">
@@ -313,4 +315,20 @@ class Reviews extends Component {
     }
 }
 
-export default Reviews;
+const mapStateToProps = state => {
+    return {
+        items: state.Items,
+        numItems: state.numberOfItems,
+        currPrice: state.totalPrice
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  }),
+        onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  })
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Reviews);

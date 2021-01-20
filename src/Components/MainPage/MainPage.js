@@ -9,7 +9,8 @@ import photo3 from '../../pictures/jewcone.jpg';
 import link1 from '../../pictures/insta4.jpg';
 // import link2 from '../../pictures/newnewghub.png';
 import link3 from '../../pictures/linkedin.png';
-
+import {connect} from 'react-redux';
+import * as actionTypes from '../../store/actions';
 
 
 
@@ -39,7 +40,7 @@ class MainPage extends Component {
 
                 <header className="section  headerpicture">
 
-                <Navbar  />
+                <Navbar numItems={this.props.numItems} />
                 {/*<br/>*/}
 
 
@@ -254,4 +255,20 @@ class MainPage extends Component {
     }
 }
 
-export default MainPage;
+const mapStateToProps = state => {
+    return {
+        items: state.Items,
+        numItems: state.numberOfItems,
+        currPrice: state.totalPrice
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  }),
+        onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  })
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MainPage);

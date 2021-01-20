@@ -17,10 +17,54 @@ class Navbar extends Component{
 
     render() {
 
-        return (
+        let bar = null;
+
+        if(this.props.numItems === 0 || this.props.numItems < 0 || this.props.numItems === null){
+
+            bar = (
+
+                <div>
+
+
+                    <nav className=" transparent z-depth-0 container">
+                        <div className="nav-wrapper  ">
+
+                            <i className="brand-logo  Caveat center-align white-text ">Jewelry By Ky</i>
+                            <a href="/" data-target="mobile-demo" className="sidenav-trigger">
+                                <i className="material-icons white-text">menu</i></a>
+                            <ul className="right hide-on-med-and-down ">
+                                <div className="Caveat ">
+                                    <li  ><NavLink  to='/' exact >Home</NavLink></li>
+                                    <li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>
+                                    <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
+                                    <li ><NavLink to='/Reviews' exact >Reviews</NavLink></li>
+                                    <li ><NavLink to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>
+                                    <li ><NavLink  to='/Contact' exact >Contact Me </NavLink></li>
 
 
 
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <ul className="sidenav sidenav-close  navimg" id="mobile-demo">
+                        <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>
+                        <li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>
+                        <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs</NavLink></li>
+                        <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>
+                        <li ><NavLink className="white-text hoverable" to='/MyOrder' exact >My Cart</NavLink></li>
+                        <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>
+
+                    </ul>
+
+
+                </div>
+            )
+
+        } else {
+
+            bar = (
 
             <div>
 
@@ -37,7 +81,7 @@ class Navbar extends Component{
                                 <li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>
                                 <li ><NavLink  to='/Customs' exact >Customs</NavLink></li>
                                 <li ><NavLink to='/Reviews' exact >Reviews</NavLink></li>
-                                <li ><NavLink to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>
+                                <li ><NavLink to='/MyOrder' exact >Cart: {this.props.numItems}</NavLink></li>
                                 <li ><NavLink  to='/Contact' exact >Contact Me </NavLink></li>
 
 
@@ -52,10 +96,26 @@ class Navbar extends Component{
                     <li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>
                     <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs</NavLink></li>
                     <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>
-                    <li ><NavLink className="white-text hoverable" to='/MyOrder' exact >My Cart</NavLink></li>
+                    <li ><NavLink className="white-text hoverable" to='/MyOrder' exact >Cart: {this.props.numItems}</NavLink></li>
                     <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>
 
                 </ul>
+
+
+            </div>
+
+            )
+        }
+
+        return (
+
+
+
+
+            <div>
+
+
+                {bar}
 
 
             </div>

@@ -48,3 +48,16 @@ main {
 /*    width: auto !important;*/
 /*    height: 350px !important;*/
 /*}*/
+
+.bodyHeight {
+    font-size: 16px;
+}
+
+.bodyHeight1 {
+    height: 300px;
+}
+
+.fontSize {
+
+    font-size: 11px;
+}

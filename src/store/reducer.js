@@ -39,7 +39,8 @@ const reducer = (state = initialState, action) => {
             return updateObject(state, {Items: state.Items.concat({
                     id: getRandomInt(1000),
                     itemName: action.itemName,
-                    itemPrice: action.itemPrice}),
+                    itemPrice: action.itemPrice,
+                    itemComponents: action.itemComponents}),
                     numberOfItems: state.numberOfItems + 1,
                     totalPrice: action.itemPrice + state.totalPrice });
 

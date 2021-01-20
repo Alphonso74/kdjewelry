@@ -10,11 +10,24 @@ import * as actionTypes from '../../store/actions';
 
 class Customs extends Component {
 
+    state = {
+
+        itemComponents: {
+
+            style: 'Spiral Design',
+            wireType: 'Silver Wire',
+            beadType: 'Sparkle Bead',
+            specialInstructions: ''
+
+        }
+
+    }
+
 
     addItem = () => {
 
 
-       return  this.props.onItemAdded("Necklace Silver Wire", 12);
+       return  this.props.onItemAdded("Necklace Silver Wire", 12, this.state.itemComponents);
 
     }
 
@@ -27,7 +40,7 @@ class Customs extends Component {
 
             <header className="section ">
 
-                <Navbar />
+                <Navbar numItems={this.props.numItems} />
 
                 <div className="row  center-align">
                     <div className=" col s12">
@@ -46,16 +59,15 @@ class Customs extends Component {
 
 
                 <div className="center">
-                <button className="waves-effect waves-light btn center center-align" onClick={this.addItem}>Test Button</button>
+                <button className="waves-effect  btn center center-align" onClick={this.addItem}>Add Item</button>
 
-                    <h1 className="white-text">{this.props.currPrice}</h1>
+                    <h1 className="white-text">Price Total: ${this.props.currPrice}</h1>
                 </div>
 
-                {/*<div className="center">*/}
-                {/*    <button className="waves-effect waves-light btn center center-align" onClick={this.addItem}>Test Button</button>*/}
+                <div className="center">
 
-                {/*    <h1 className="white-text">{this.props.currPrice}</h1>*/}
-                {/*</div>*/}
+                    <h4 className="white-text">Number of Items: {this.props.numItems}</h4>
+                </div>
 
 
 
@@ -103,7 +115,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  }),
+        onItemAdded: (itemName, itemPrice, itemComponents) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice, itemComponents: itemComponents  }),
         onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  })
 
     }

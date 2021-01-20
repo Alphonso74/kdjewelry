@@ -9,6 +9,8 @@ import photo3 from "../../pictures/jewcone.jpg";
 import link3 from "../../pictures/jewtable.jpg";
 // import link1 from "../../pictures/insta4.jpg";
 import M from "materialize-css/dist/js/materialize.min";
+import {connect} from 'react-redux';
+import * as actionTypes from '../../store/actions';
 
 class Catalog extends Component {
 
@@ -33,7 +35,7 @@ class Catalog extends Component {
 
             <header className="section">
 
-                <Navbar />
+                <Navbar numItems={this.props.numItems}/>
 
                 {/*<h1 className="center  Caveat black-text">Catalog</h1>*/}
             </header>
@@ -150,4 +152,20 @@ class Catalog extends Component {
     }
 }
 
-export default Catalog;
+const mapStateToProps = state => {
+    return {
+        items: state.Items,
+        numItems: state.numberOfItems,
+        currPrice: state.totalPrice
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  }),
+        onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  })
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Catalog);
