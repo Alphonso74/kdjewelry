@@ -21,7 +21,7 @@ class Customs extends Component {
 
         }
 
-    }
+    };
 
 
     addItem = () => {
@@ -29,7 +29,7 @@ class Customs extends Component {
 
        return  this.props.onItemAdded("Necklace Silver Wire", 12, this.state.itemComponents);
 
-    }
+    };
 
     render(){
 
@@ -111,7 +111,7 @@ const mapStateToProps = state => {
             numItems: state.numberOfItems,
             currPrice: state.totalPrice
     }
-}
+};
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -119,6 +119,6 @@ const mapDispatchToProps = dispatch => {
         onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  })
 
     }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Customs);

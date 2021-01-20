@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from "../UI/Navbar";
+import Order from "./Order";
 import './MyOrderCSS.css';
 // import photo1 from "../../pictures/jewcrystal.jpg";
 // import photo2 from "../../pictures/jewhand2.jpg";
@@ -11,8 +12,9 @@ import * as actionTypes from '../../store/actions';
 class MyOrder extends Component {
 
 
-    deleteItem = () => {
+    deleteItem = (id, price) => {
 
+        this.props.onItemRemove(id, price)
 
     };
 
@@ -57,14 +59,22 @@ class MyOrder extends Component {
 
                                 return (
 
-                                    <tr>
-                                        <td className="center-align"><button className="btn black white-text hoverable"><i className="material-icons " onClick={this.deleteItem}>cancel</i></button></td>
-                                        <td className="center-align">{item.itemName}</td>
-                                        <td className="center-align">${item.itemPrice}</td>
-                                        <td className="center-align">{item.itemComponents.style} <br/>{item.itemComponents.wireType}<br/>{item.itemComponents.beadType}<br/>{item.itemComponents.specialInstructions} </td>
+                                    <Order key={item.id}
+                                           name={item.itemName}
+                                           price={item.itemPrice}
+                                           components={item.itemComponents}
+                                           clicked={() => this.props.onItemRemove(item.id, item.itemPrice)}
+                                          />
 
 
-                                    </tr>
+                                    // <tr key={item.id}>
+                                    //     <td className="center-align"><button className="btn black white-text hoverable" ><i className="material-icons " onClick={this.deleteItem}>cancel</i></button></td>
+                                    //     <td className="center-align">{item.itemName}</td>
+                                    //     <td className="center-align">${item.itemPrice}</td>
+                                    //     <td className="center-align">{item.itemComponents.style} <br/>{item.itemComponents.wireType}<br/>{item.itemComponents.beadType}<br/>{item.itemComponents.specialInstructions} </td>
+                                    //
+                                    //
+                                    // </tr>
 
                                 )
                             })
