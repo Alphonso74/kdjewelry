@@ -8,6 +8,8 @@ import './MyOrderCSS.css';
 // import photo from "../../pictures/jewelry1.jpg";
 import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
+import {Link, NavLink, Redirect} from 'react-router-dom';
+import CheckOut from "../CheckOut/CheckOut";
 
 class MyOrder extends Component {
 
@@ -27,7 +29,7 @@ class MyOrder extends Component {
 
 
                 <div>
-                    <h1 className="center center-align white-text Caveat">No Orders Just Yet......</h1>
+                    <h1 className="center center-align white-text Caveat">No Items Just Yet......</h1>
                 </div>
             )
 
@@ -44,16 +46,21 @@ class MyOrder extends Component {
                     <div className="section transparent z-depth-0  Caveat  center    white-text">
 
                         <table className=" bodyHeight">
+                            <h1 className="white-text center center-align Caveat">Total Price: ${this.props.currPrice}</h1>
+
                             <thead>
+
                             <tr>
+
                                 <th className="center-align"></th>
 
                                 <th className="center-align">Items</th>
                                 <th className="center-align">Price</th>
-                                <th className="center-align">Components</th>
+                                {/*<th className="center-align">Components</th>*/}
 
                             </tr>
                             </thead>
+
                             <tbody className="bodyHeight1" >
                             {this.props.items.map((item) => {
 
@@ -83,8 +90,15 @@ class MyOrder extends Component {
 
 
                             </tbody>
+
                         </table>
+                        <br/>
+
+                        <Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/CheckOut' >Check Out</Link>
+
                     </div>
+
+
 
 
 
@@ -106,8 +120,7 @@ class MyOrder extends Component {
                 <div className="row  center-align">
                     <div className=" col s12">
                         <br/>
-                        <br/>
-                        <br/>
+
                         <span className="center center-align Caveat black-text">My Order</span>
 
 
@@ -122,10 +135,7 @@ class MyOrder extends Component {
 
                 {currItems}
 
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+
                 <br/>
 
 

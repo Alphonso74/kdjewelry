@@ -48,12 +48,12 @@ const reducer = (state = initialState, action) => {
         case actionTypes.REMOVE_ITEMFROMCART:
 
             const updatedArray = state.Items.filter(items  => items.id !== action.itemID);
-            console.log(action.itemID)
+            console.log(action.itemID);
             return {
                 ...state,
                 Items: updatedArray,
                 numberOfItems: state.numberOfItems - 1,
-                totalPrice: action.itemPrice - state.totalPrice
+                totalPrice:  state.totalPrice - action.itemPrice
 
             }
 

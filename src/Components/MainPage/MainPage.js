@@ -7,6 +7,7 @@ import photo1 from '../../pictures/jewcrystal.jpg';
 import photo2 from '../../pictures/jewhand2.jpg';
 import photo3 from '../../pictures/jewcone.jpg';
 import link1 from '../../pictures/insta4.jpg';
+import poop from '../../pictures/IG2.png';
 // import link2 from '../../pictures/newnewghub.png';
 import link3 from '../../pictures/linkedin.png';
 import {connect} from 'react-redux';
@@ -47,10 +48,6 @@ class MainPage extends Component {
                         <div className="row  center-align">
                             <div className=" col s12">
                                 {/*<span className="white-text Caveat">Custom Designs </span>*/}
-                                <br/>
-
-                                <br/>
-                                <br/>
                                 <h1 className="center-align center Caveat white-text sizeFont">Welcome!</h1>
 
 
@@ -194,10 +191,10 @@ class MainPage extends Component {
                                     <div className="card-image">
                                         <img src={link3} alt=""/>
                                     </div>
-                                    <div className="card-content center-align">
-                                        <a className="center-align" href="https://www.linkedin.com/in/alphonso-mckenzie-a32440189/">Connect!</a>
+                                    {/*<div className="card-content center-align center">*/}
+                                    {/*    /!*<span className="center-align" >Connect!</span>*!/*/}
 
-                                    </div>
+                                    {/*</div>*/}
 
                                 </div>
                             </div>
@@ -210,12 +207,12 @@ class MainPage extends Component {
                                     window.location.href='https://www.youtube.com/playlist?list=PLW-hBvwtzj_6JMHwju6k46fW-G4k72AKp';
                                 }}>
                                     <div className="card-image">
-                                        <img src={link1} alt=""/>
+                                        <img src={poop} alt=""/>
                                     </div>
-                                    <div className="card-content center-align">
-                                        <a className="center-align" href="https://www.youtube.com/">Instagram!</a>
+                                    {/*<div className="card-content center-align center">*/}
+                                    {/*    /!*<span className="center-align" >Instagram!</span>*!/*/}
 
-                                    </div>
+                                    {/*</div>*/}
 
                                 </div>
                             </div>

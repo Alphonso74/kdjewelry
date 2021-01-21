@@ -7,7 +7,7 @@ const Order = (props) => (
         <td className="center-align"><button className="btn black white-text hoverable" onClick={props.clicked}><i className="material-icons " >cancel</i></button></td>
         <td className="center-align">{props.name}</td>
         <td className="center-align">${props.price}</td>
-        <td className="center-align">{props.components.style} <br/>{props.components.wireType}<br/>{props.components.beadType}<br/>{props.components.specialInstructions} </td>
+        {/*<td className="center-align">{props.components.style} <br/>{props.components.wireType}<br/>{props.components.beadType}<br/>{props.components.specialInstructions} </td>*/}
 
 
     </tr>

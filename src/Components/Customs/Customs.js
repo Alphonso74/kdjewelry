@@ -14,20 +14,21 @@ class Customs extends Component {
 
         itemComponents: {
 
-            style: 'Spiral Design',
-            wireType: 'Silver Wire',
-            beadType: 'Sparkle Bead',
-            specialInstructions: ''
+            style: 'None',
+            wireType: 'None',
+            beadType: 'None',
+            specialInstructions: 'None'
 
         }
 
     };
 
 
+
     addItem = () => {
 
 
-       return  this.props.onItemAdded("Necklace Silver Wire", 12, this.state.itemComponents);
+       return  this.props.onItemAdded("Spiral Design Necklace with Silver Wire and Black Bead", Math.floor(Math.random() * Math.floor(20)), this.state.itemComponents);
 
     };
 

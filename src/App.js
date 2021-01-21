@@ -6,6 +6,7 @@ import MyOrder from './Components/MyOrder/MyOrder';
 import Contact from './Components/Contact/Contact';
 import Customs from './Components/Customs/Customs';
 import Reviews from "./Components/Review/Reviews";
+import CheckOut from "./Components/CheckOut/CheckOut";
 
 class App extends Component {
 
@@ -27,6 +28,8 @@ class App extends Component {
                 <Route path="/Contact" exact component={Contact}/>
                 <Route path="/Customs" exact component={Customs}/>
                 <Route path="/Reviews" exact component={Reviews}/>
+                <Route path="/CheckOut" exact component={CheckOut}/>
+
 
 
 

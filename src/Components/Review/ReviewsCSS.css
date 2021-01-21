@@ -47,6 +47,7 @@ thead {
 }
 table {
     width:100%;
+
 }
 
 .select-dropdown {
@@ -57,4 +58,8 @@ table {
 
 .labelTitle {
     font-size: 14px !important;
+}
+
+.bodyHeight2 {
+    height: 300px;
 }

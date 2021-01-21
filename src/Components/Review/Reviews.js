@@ -180,22 +180,22 @@ class Reviews extends Component {
                         <table>
                             <thead>
                             <tr>
-                                <th>Customer</th>
-                                <th>Item</th>
-                                <th>Review</th>
+                                <th className="center-align">Customer</th>
+                                <th className="center-align">Item</th>
+                                <th className="center-align">Review</th>
 
                             </tr>
                            </thead>
-                            <tbody>
+                            <tbody className="bodyHeight2">
                             {this.state.reviews.map((review) => {
 
                                 return (
 
-                                <tr>
+                                <tr >
 
-                                    <td>{review.name}</td>
-                                    <td>{review.item}</td>
-                                    <td>{review.message}</td>
+                                    <td className="center-align">{review.name}</td>
+                                    <td className="center-align">{review.item}</td>
+                                    <td className="center-align">{review.message}</td>
 
                                 </tr>
 
