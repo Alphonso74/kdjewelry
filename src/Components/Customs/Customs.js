@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Navbar from "../UI/Navbar";
 import './CustomsCSS.css';
-// import photo1 from "../../pictures/jewcrystal.jpg";
-// import photo2 from "../../pictures/jewhand2.jpg";
-// import photo3 from "../../pictures/jewcone.jpg";
-// import photo from "../../pictures/jewelry1.jpg";
+import photo1 from "../../pictures/jewcrystal.jpg";
+import photo2 from "../../pictures/jewhand2.jpg";
+import photo3 from "../../pictures/jewcone.jpg";
+import photo from "../../pictures/jewelry1.jpg";
 import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
 
@@ -12,8 +12,11 @@ class Customs extends Component {
 
     state = {
 
+        itemName: 'None',
+        itemPrice: 0,
         itemComponents: {
 
+            itemType: 'None',
             style: 'None',
             wireType: 'None',
             beadType: 'None',
@@ -28,7 +31,7 @@ class Customs extends Component {
     addItem = () => {
 
 
-       return  this.props.onItemAdded("Spiral Design Necklace with Silver Wire and Black Bead", Math.floor(Math.random() * Math.floor(20)), this.state.itemComponents);
+       return  this.props.onItemAdded(this.state.itemName, this.state.itemPrice, this.state.itemComponents);
 
     };
 
@@ -57,6 +60,124 @@ class Customs extends Component {
             </header>
 
             <main >
+
+
+                <div className=" row  container">
+
+                    <h1 className="center-align center Caveat white-text">Choose an Item Type</h1>
+
+                    <div className="col s4  center-align center card  small transparent z-depth-0">
+                        <div className="card-image">
+                            <img src={photo} alt=""
+                                 className=" responsive-img"/>
+                        </div>
+                        <div className=" card-content center center-align">
+                            <span className="Caveat white-text ">Necklace</span>
+                        </div>
+                    </div>
+
+                            <div className="col s4  center-align card small  transparent z-depth-0">
+                                <div className="card-image">
+                                    <img src={photo1} alt=""
+                                         className=" responsive-img"/>
+                                </div>
+                                <div className=" card-content center center-align ">
+                                    <span className="Caveat white-text ">Ring</span>
+                                </div>
+                            </div>
+
+
+
+                            <div className="col s4  center-align card small transparent z-depth-0">
+                                <div className="card-image">
+                                <img src={photo3} alt=""
+                                     className=" responsive-img psize"/>
+                                </div>
+                                <div className="card-content center center-align">
+                                <span className="Caveat white-text ">Bracelet</span>
+                                </div>
+
+                            </div>
+                    {/*<i className="material-icons centerAlign center green">check_circle</i>*/}
+
+                </div>
+
+
+                <div className=" row  container">
+
+                    <h1 className="center-align center Caveat white-text">Choose a Style</h1>
+
+                    <div className="col s4  center-align center card  small transparent z-depth-0">
+                        <div className="card-image">
+                            <img src={photo} alt=""
+                                 className=" responsive-img"/>
+                        </div>
+                        <div className=" card-content center center-align">
+                            <span className="Caveat white-text ">Spiral</span>
+                        </div>
+                    </div>
+
+                    <div className="col s4  center-align card small  transparent z-depth-0">
+                        <div className="card-image">
+                            <img src={photo1} alt=""
+                                 className=" responsive-img"/>
+                        </div>
+                        <div className=" card-content center center-align ">
+                            <span className="Caveat white-text ">Cone</span>
+                        </div>
+                    </div>
+
+
+
+                    <div className="col s4  center-align card small transparent z-depth-0">
+                        <div className="card-image">
+                            <img src={photo3} alt=""
+                                 className=" responsive-img psize"/>
+                        </div>
+                        <div className="card-content center center-align">
+                            <span className="Caveat white-text ">Diamond</span>
+                        </div>
+
+                    </div>
+                    {/*<i className="material-icons centerAlign center green">check_circle</i>*/}
+
+                </div>
+
+
+                <div className=" row  container">
+
+                    <h1 className="center-align center Caveat white-text">Choose a Wire Type</h1>
+
+
+                    <div className="col s6  center-align card medium  transparent z-depth-0">
+                        <div className="card-image">
+                            <img src={photo1} alt=""
+                                 className=" responsive-img"/>
+                        </div>
+                        <div className=" card-content center center-align ">
+                            <span className="Caveat white-text ">Silver</span>
+                        </div>
+                    </div>
+
+
+
+                    <div className="col s6  center-align card medium transparent z-depth-0">
+                        <div className="card-image">
+                            <img src={photo3} alt=""
+                                 className=" responsive-img psize"/>
+                        </div>
+                        <div className="card-content center center-align">
+                            <span className="Caveat white-text ">Brass</span>
+                        </div>
+
+                    </div>
+                    {/*<i className="material-icons centerAlign center green">check_circle</i>*/}
+
+                </div>
+
+
+
+
 
 
                 <div className="center">

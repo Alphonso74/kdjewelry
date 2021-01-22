@@ -184,7 +184,7 @@ class MainPage extends Component {
 
 
                             <div className="col s6 ">
-                                <div className="card  hoverable center-align" onClick={(e) => {
+                                <div className="card small hoverable center-align" onClick={(e) => {
                                     e.preventDefault();
                                     window.location.href='https://www.linkedin.com/in/alphonso-mckenzie-a32440189/';
                                 }}>
@@ -202,7 +202,7 @@ class MainPage extends Component {
 
 
                             <div className="col s6">
-                                <div className="card  hoverable center-align" onClick={(e) => {
+                                <div className="card small hoverable center-align" onClick={(e) => {
                                     e.preventDefault();
                                     window.location.href='https://www.youtube.com/playlist?list=PLW-hBvwtzj_6JMHwju6k46fW-G4k72AKp';
                                 }}>
