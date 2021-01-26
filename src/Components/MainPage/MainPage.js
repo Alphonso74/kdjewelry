@@ -163,63 +163,66 @@ class MainPage extends Component {
                     </div>
 
 
-                    <div className="section transparent z-depth-0 Caveat">
-                        <div className="row container center-align">
-                            <div className="col s12 ">
+                    {/*<div className="section transparent z-depth-0 Caveat">*/}
+                    {/*    <div className="row container center-align">*/}
+                    {/*        <div className="col s12 ">*/}
 
 
 
-                                <h1 className="white-text ">My Links</h1>
-                                <pre><code className="language-markup col s12">
-        </code></pre>
-                            </div>
-                        </div>
-
-
-
-
-                        <div className="row center container">
+        {/*                        <h1 className="white-text ">My Links</h1>*/}
+        {/*                        <pre><code className="language-markup col s12">*/}
+        {/*</code></pre>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
 
 
 
 
-                            <div className="col s6 ">
-                                <div className="card small hoverable center-align" onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href='https://www.linkedin.com/in/alphonso-mckenzie-a32440189/';
-                                }}>
-                                    <div className="card-image">
-                                        <img src={link3} alt=""/>
-                                    </div>
-                                    {/*<div className="card-content center-align center">*/}
-                                    {/*    /!*<span className="center-align" >Connect!</span>*!/*/}
-
-                                    {/*</div>*/}
-
-                                </div>
-                            </div>
+        {/*                <div className="container">*/}
+        {/*                <div className="row s12 card center container">*/}
 
 
 
-                            <div className="col s6">
-                                <div className="card small hoverable center-align" onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href='https://www.youtube.com/playlist?list=PLW-hBvwtzj_6JMHwju6k46fW-G4k72AKp';
-                                }}>
-                                    <div className="card-image">
-                                        <img src={poop} alt=""/>
-                                    </div>
-                                    {/*<div className="card-content center-align center">*/}
-                                    {/*    /!*<span className="center-align" >Instagram!</span>*!/*/}
 
-                                    {/*</div>*/}
+        {/*                    <div className="  col s6 ">*/}
+        {/*                        <div className="center  center-align" onClick={(e) => {*/}
+        {/*                            e.preventDefault();*/}
+        {/*                            window.location.href='https://www.linkedin.com/in/alphonso-mckenzie-a32440189/';*/}
+        {/*                        }}>*/}
+        {/*                            <div className="card-image">*/}
+        {/*                                <img src={link3} alt=""/>*/}
+        {/*                            </div>*/}
+        {/*                            /!*<div className="card-content center-align center">*!/*/}
+        {/*                            /!*    /!*<span className="center-align" >Connect!</span>*!/*!/*/}
 
-                                </div>
-                            </div>
+        {/*                            /!*</div>*!/*/}
+
+        {/*                        </div>*/}
+        {/*                    </div>*/}
 
 
-                        </div>
-                    </div>
+
+        {/*                    <div className="  col s6">*/}
+        {/*                        <div className="center   center-align" onClick={(e) => {*/}
+        {/*                            e.preventDefault();*/}
+        {/*                            window.location.href='https://www.youtube.com/playlist?list=PLW-hBvwtzj_6JMHwju6k46fW-G4k72AKp';*/}
+        {/*                        }}>*/}
+        {/*                            <div className="card-image">*/}
+        {/*                                <img src={poop} alt=""/>*/}
+        {/*                            </div>*/}
+        {/*                            /!*<div className="card-content center-align center">*!/*/}
+        {/*                            /!*    /!*<span className="center-align" >Instagram!</span>*!/*!/*/}
+
+        {/*                            /!*</div>*!/*/}
+
+        {/*                        </div>*/}
+        {/*                    </div>*/}
+
+
+        {/*                </div>*/}
+        {/*                </div>*/}
+
+        {/*            </div>*/}
 
 
                 </main>

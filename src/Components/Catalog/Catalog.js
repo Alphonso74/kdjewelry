@@ -41,11 +41,11 @@ class Catalog extends Component {
             </header>
 
             <main >
+
+
                 <h1 className="center  Caveat white-text">Rings</h1>
 
-
-
-                    <div className="carousel center ">
+                    <div className="carousel center container">
 
 
                         <a className="carousel-item" href="#one!"><img
@@ -66,11 +66,11 @@ class Catalog extends Component {
                 <br/>
 
 
+
+
                 <h1 className="center  Caveat white-text">Bracelets</h1>
 
-
-
-                <div className="carousel center ">
+                <div className="carousel center container">
 
 
                     <a className="carousel-item" href="#one!"><img
@@ -90,11 +90,11 @@ class Catalog extends Component {
                 <br/>
                 <br/>
 
+
+
                 <h1 className="center  Caveat white-text">Necklaces</h1>
 
-
-
-                <div className="carousel center ">
+                <div className="carousel center container">
 
 
                     <a className="carousel-item" href="#one!"><img

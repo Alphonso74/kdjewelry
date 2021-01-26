@@ -53,3 +53,15 @@ main {
 
     background-color: greenyellow;
 }
+
+.style1{
+    background-color:greenyellow;
+    /*color:white;*/
+    /*font-size:44px;*/
+}
+
+.style3{
+    background-color:white;
+    /*color:white;*/
+    /*font-size:44px;*/
+}
