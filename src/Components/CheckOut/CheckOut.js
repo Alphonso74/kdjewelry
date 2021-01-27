@@ -16,6 +16,8 @@ class CheckOut extends Component {
 
 
 submitOrder = () => {
+    window.event.preventDefault();
+    document.getElementById("formyform").reset();
 
 
     const elem = document.getElementById('modal13');
@@ -91,7 +93,40 @@ render() {
             </div>
             </div>
 
-            <button className="Caveat waves-effect waves-light btn-large white black-text hoverable " onClick={this.submitOrder}>Submit Order</button>
+            <div className="  Caveat card transparent z-depth-0">
+
+                <h1 className="center center-align white-text">Please Enter User Information</h1>
+                <form className="row s12 center-align container" id="formyform" onSubmit={this.submitOrder}>
+                    <div className="input-field row s12">
+                        <input id="email" type="email" required=" " className="validate white-text" onChange={this.emailChange}/>
+                        <label htmlFor="email" className="white-text">Email</label>
+                    </div>
+
+                    {/*<div className="row s12">*/}
+                    <div className="input-field row s6">
+                        <input id="first_name" type="text" required=" " className="validate white-text" onChange={this.firstNameChange}/>
+                        <label htmlFor="first_name" className="white-text">First Name</label>
+                    </div>
+                    <div className="input-field row s6">
+                        <input id="last_name" type="text" className="validate white-text" required=" " onChange={this.lastNameChange}/>
+                        <label htmlFor="last_name" className="white-text">Last Name</label>
+                    </div>
+                    {/*</div>*/}
+
+                    {/*<div className="row s12">*/}
+                    <div className="input-field row s12">
+                        <textarea id="message" className="validate materialize-textarea white-text" required=" " onChange={this.messageChange}/>
+                        <label htmlFor="message" className="white-text">Special Requests</label>
+                    </div>
+                    {/*</div>*/}
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable"><i
+                        className="material-icons right">send</i>Submit Order</button>
+
+                </form>
+            </div>
+
+            {/*<button className="Caveat waves-effect waves-light btn-large white black-text hoverable " onClick={this.submitOrder}>Submit Order</button>*/}
 
 
             <br/>

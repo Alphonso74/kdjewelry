@@ -57,6 +57,10 @@ const reducer = (state = initialState, action) => {
 
             }
 
+        case actionTypes.RESET_STORE:
+
+
+            return null;
 
 
             default:
