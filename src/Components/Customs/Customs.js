@@ -32,7 +32,8 @@ class Customs extends Component {
         console.log('poop');
         document.getElementById('Ring').setAttribute("class", "style1");
         document.getElementById('Necklace').setAttribute("class", "style3");
-        document.getElementById('Test').setAttribute("class", "style3");
+        // document.getElementById('Test').setAttribute("class", "style3");
+        document.getElementById('Bracelet').setAttribute("class", "style3");
 
 
     }
@@ -44,7 +45,9 @@ class Customs extends Component {
         document.getElementById('Necklace').setAttribute("class", "style1");
 
         document.getElementById('Ring').setAttribute("class", "style3");
-        document.getElementById('Test').setAttribute("class", "style3");
+        // document.getElementById('Test').setAttribute("class", "style3");
+        document.getElementById('Bracelet').setAttribute("class", "style3");
+
 
     }
 
@@ -55,7 +58,9 @@ class Customs extends Component {
         document.getElementById('Bracelet').setAttribute("class", "style1");
 
         document.getElementById('Necklace').setAttribute("class", "style3");
-        document.getElementById('Test').setAttribute("class", "style3");
+        // document.getElementById('Test').setAttribute("class", "style3");
+        document.getElementById('Ring').setAttribute("class", "style3");
+
 
     }
 
@@ -67,6 +72,7 @@ class Customs extends Component {
 
         document.getElementById('Ring').setAttribute("class", "style3");
         document.getElementById('Necklace').setAttribute("class", "style3");
+        document.getElementById('Bracelet').setAttribute("class", "style3");
 
     }
 
@@ -90,16 +96,14 @@ class Customs extends Component {
 
                 <Navbar numItems={this.props.numItems} />
 
-                <div className="row  center-align">
-                    <div className=" col s12">
-                        <br/>
-                        <br/>
-                        <br/>
-                        <span className="center center-align Caveat white-text">Customs</span>
+                {/*<div className="row  center-align">*/}
+                    {/*<div className=" col s12">*/}
+                    {/*    <br/>*/}
+                    {/*    <span className="center center-align Caveat white-text">Customs</span>*/}
 
 
-                    </div>
-                </div>
+                    {/*</div>*/}
+                {/*</div>*/}
 
             </header>
 
@@ -110,38 +114,441 @@ class Customs extends Component {
                         <div className="col s12">
                             <div className="card transparent z-depth-0  Caveat">
                                 <div className="card-content center-align center">
-                                    <span className="card-title center-align center white-text">Choose an Item Type:</span>
-                                    <p className="center center-align white-text">Options</p>
+                                    <p className="card-title center-align center white-text">Choose an Item Type:</p>
+                                    {/*<p className="center center-align white-text">Options</p>*/}
+                                    <br/>
                                     <div className="row ">
-                                        <div className="col s6 center center-align">
-                                            <div className="card hoverable" id="Ring" onClick={this.optionClick1}>
+                                        <div className="col s4 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
                                                 <div className="card-content center-block center-align">
-                                                    <span className="card-title">Ring</span>
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                            <span className="card-title black-text">Ring</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div className="col s6 center center-align" id="Bracelet" onClick={this.optionClick3}>
-                                            <div className="card hoverable">
+                                        <div className="col s4 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
                                                 <div className="card-content center-block center-align">
-                                                    <span className="card-title">Bracelet</span>
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                            <span className="card-title black-text">Bracelet</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s4  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="row  ">
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <hr className="tubular hide-on-small-and-down"/>
+
+
+
+                <div className="container hide-on-small-and-down">
+                    <div className="row ">
+                        <div className="col s12">
+                            <div className="card transparent z-depth-0  Caveat">
+                                <div className="card-content center-align center">
+                                    <p className="card-title center-align center white-text">Choose a Style:</p>
+                                    {/*<p className="center center-align white-text">Options</p>*/}
+                                    <br/>
                                     <div className="row ">
-                                        <div className="col s6 ">
-                                            <div className="card hoverable" id="Necklace" onClick={this.optionClick2}>
+                                        <div className="col s3 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
                                                 <div className="card-content center-block center-align">
-                                                    <span className="card-title center-align ">Necklace</span>
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                        <span className="card-title black-text">Spiral</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col s6 ">
-                                            <div className="card hoverable" id="Test" onClick={this.optionClick4}>
+
+                                        <div className="col s3 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
                                                 <div className="card-content center-block center-align">
-                                                    <span className="card-title">Test</span>
-                                             </div>
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                        <span className="card-title black-text">Double Loop</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Laser</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Tri</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="row  ">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <hr className="tubular hide-on-small-and-down"/>
+
+
+
+                <div className="container hide-on-small-and-down ">
+                    <div className="row container">
+                        <div className="col s12">
+                            <div className="card transparent z-depth-0  Caveat">
+                                <div className="card-content center-align center">
+                                    <p className="card-title center-align center white-text">Choose a Wire Type:</p>
+                                    {/*<p className="center center-align white-text">Options</p>*/}
+                                    <br/>
+                                    <div className="row ">
+                                        <div className="col s6 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                        <span className="card-title black-text">Silver</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s6 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                        <span className="card-title black-text">Bronze</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div className="row  ">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <hr className="tubular hide-on-small-and-down"/>
+
+
+
+                <div className="container hide-on-small-and-down">
+                    <div className="row ">
+                        <div className="col s12">
+                            <div className="card transparent z-depth-0  Caveat">
+                                <div className="card-content center-align center">
+                                    <p className="card-title center-align center white-text">Choose a Bead:</p>
+                                    {/*<p className="center center-align white-text">Options</p>*/}
+                                    <br/>
+                                    <div className="row ">
+                                        <div className="col s3 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                        <span className="card-title black-text">Ring</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                        <span className="card-title black-text">Bracelet</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="row  ">
+
+                                        <div className="col s3 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                        <span className="card-title black-text">Ring</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                        <span className="card-title black-text">Bracelet</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="row  ">
+
+                                        <div className="col s3 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                        <span className="card-title black-text">Ring</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                        <span className="card-title black-text">Bracelet</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="row  ">
+
+                                        <div className="col s3 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                        <span className="card-title black-text">Ring</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                        <span className="card-title black-text">Bracelet</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="row  ">
+
+                                        <div className="col s3 center center-align">
+                                            <div className="card " id="Ring" onClick={this.optionClick1}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Ring</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo1}/>
+                                                        <span className="card-title black-text">Ring</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3 center center-align" >
+                                            <div className="card " id="Bracelet" onClick={this.optionClick3}>
+                                                <div className="card-content center-block center-align">
+                                                    {/*<span className="card-title">Bracelet</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo3}/>
+                                                        <span className="card-title black-text">Bracelet</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col s3  ">
+                                            <div className="card " id="Necklace" onClick={this.optionClick2}>
+                                                <div className="card-content  ">
+                                                    {/*<span className="card-title  ">Necklace</span>*/}
+                                                    <div className="card-image">
+                                                        <img src={photo}/>
+                                                        <span className="card-title black-text">Necklace</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -156,118 +563,7 @@ class Customs extends Component {
 
                 </div>
 
-                {/*<div className=" row  container">*/}
 
-                {/*    <h1 className="center-align center Caveat white-text">Choose an Item Type</h1>*/}
-
-                {/*    <div className="col s4  center-align center card  small transparent z-depth-0">*/}
-                {/*        <div className="card-image">*/}
-                {/*            <img src={photo} alt=""*/}
-                {/*                 className=" responsive-img"/>*/}
-                {/*        </div>*/}
-                {/*        <div className=" card-content center center-align">*/}
-                {/*            <span className="Caveat white-text ">Necklace</span>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-                {/*            <div className="col s4  center-align card small  transparent z-depth-0">*/}
-                {/*                <div className="card-image">*/}
-                {/*                    <img src={photo1} alt=""*/}
-                {/*                         className=" responsive-img"/>*/}
-                {/*                </div>*/}
-                {/*                <div className=" card-content center center-align ">*/}
-                {/*                    <span className="Caveat white-text ">Ring</span>*/}
-                {/*                </div>*/}
-                {/*            </div>*/}
-
-
-
-                {/*            <div className="col s4  center-align card small transparent z-depth-0">*/}
-                {/*                <div className="card-image">*/}
-                {/*                <img src={photo3} alt=""*/}
-                {/*                     className=" responsive-img psize"/>*/}
-                {/*                </div>*/}
-                {/*                <div className="card-content center center-align">*/}
-                {/*                <span className="Caveat white-text ">Bracelet</span>*/}
-                {/*                </div>*/}
-
-                {/*            </div>*/}
-                {/*    /!*<i className="material-icons centerAlign center green">check_circle</i>*!/*/}
-
-                {/*</div>*/}
-
-
-                {/*<div className=" row  container">*/}
-
-                {/*    <h1 className="center-align center Caveat white-text">Choose a Style</h1>*/}
-
-                {/*    <div className="col s4  center-align center card  small transparent z-depth-0">*/}
-                {/*        <div className="card-image">*/}
-                {/*            <img src={photo} alt=""*/}
-                {/*                 className=" responsive-img"/>*/}
-                {/*        </div>*/}
-                {/*        <div className=" card-content center center-align">*/}
-                {/*            <span className="Caveat white-text ">Spiral</span>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-                {/*    <div className="col s4  center-align card small  transparent z-depth-0">*/}
-                {/*        <div className="card-image">*/}
-                {/*            <img src={photo1} alt=""*/}
-                {/*                 className=" responsive-img"/>*/}
-                {/*        </div>*/}
-                {/*        <div className=" card-content center center-align ">*/}
-                {/*            <span className="Caveat white-text ">Cone</span>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-
-
-                {/*    <div className="col s4  center-align card small transparent z-depth-0">*/}
-                {/*        <div className="card-image">*/}
-                {/*            <img src={photo3} alt=""*/}
-                {/*                 className=" responsive-img psize"/>*/}
-                {/*        </div>*/}
-                {/*        <div className="card-content center center-align">*/}
-                {/*            <span className="Caveat white-text ">Diamond</span>*/}
-                {/*        </div>*/}
-
-                {/*    </div>*/}
-                {/*    /!*<i className="material-icons centerAlign center green">check_circle</i>*!/*/}
-
-                {/*</div>*/}
-
-
-                {/*<div className=" row  container">*/}
-
-                {/*    <h1 className="center-align center Caveat white-text">Choose a Wire Type</h1>*/}
-
-
-                {/*    <div className="col s6  center-align card medium  transparent z-depth-0">*/}
-                {/*        <div className="card-image">*/}
-                {/*            <img src={photo1} alt=""*/}
-                {/*                 className=" responsive-img"/>*/}
-                {/*        </div>*/}
-                {/*        <div className=" card-content center center-align ">*/}
-                {/*            <span className="Caveat white-text ">Silver</span>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-
-
-                {/*    <div className="col s6  center-align card medium transparent z-depth-0">*/}
-                {/*        <div className="card-image">*/}
-                {/*            <img src={photo3} alt=""*/}
-                {/*                 className=" responsive-img psize"/>*/}
-                {/*        </div>*/}
-                {/*        <div className="card-content center center-align">*/}
-                {/*            <span className="Caveat white-text ">Brass</span>*/}
-                {/*        </div>*/}
-
-                {/*    </div>*/}
-                {/*    /!*<i className="material-icons centerAlign center green">check_circle</i>*!/*/}
-
-                {/*</div>*/}
 
 
 

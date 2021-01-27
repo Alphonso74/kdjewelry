@@ -13,7 +13,8 @@ hr.solid {
 }
 
 /* Rounded border */
-hr.rounded {
-    border-top: 15px solid #bbb;
-    border-radius: 5px;
-}
+/*hr.rounded {*/
+/*    border-top: 15px solid #bbb;*/
+/*    border-radius: 5px;*/
+/*    width: 150px;*/
+/*}*/

@@ -65,3 +65,10 @@ main {
     /*color:white;*/
     /*font-size:44px;*/
 }
+
+
+.tubular {
+    border-top: 15px solid #bbb;
+    border-radius: 5px;
+    width: 1000px;
+}

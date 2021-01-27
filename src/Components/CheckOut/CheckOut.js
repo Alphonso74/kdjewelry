@@ -57,7 +57,7 @@ render() {
 
             <h1 className=" Caveat">Check Out</h1>
             <div className="container">
-                <hr className="rounded "/>
+                {/*<hr className="rounded "/>*/}
 
 
                 <div className="transparent z-depth-0 center center-align card grey">
