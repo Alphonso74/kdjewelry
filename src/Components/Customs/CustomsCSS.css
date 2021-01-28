@@ -55,14 +55,19 @@ main {
 }
 
 .style1{
-    background-color:greenyellow;
+    /*background-color:greenyellow;*/
+    color: green;
+    font-weight: bold;
     /*color:white;*/
     /*font-size:44px;*/
+
 }
 
 .style3{
-    background-color:white;
+    /*background-color:white;*/
     /*color:white;*/
+    color: black;
+    background-color: white;
     /*font-size:44px;*/
 }
 
@@ -71,4 +76,32 @@ main {
     border-top: 15px solid #bbb;
     border-radius: 5px;
     width: 1000px;
+}
+
+.card {
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    .resizeimg {
+        height: auto;
+    }
+    .scaleText {
+        font-size: 15px;
+
+    }
+    /*.scaleText1 {*/
+    /*    font-size: 12px;*/
+
+    /*}*/
+}
+
+@media (min-width: 1000px) {
+    .resizeimg {
+        width: auto;
+        height: 350px;
+    }
+    .scaleText {
+        font-size: 20px;
+    }
 }
