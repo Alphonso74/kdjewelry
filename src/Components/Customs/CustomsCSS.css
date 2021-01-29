@@ -1,6 +1,6 @@
 .backgroundimg123 {
 
-    background-image: url("../../pictures/tree-838667.jpg") ;
+    background-image: url("../../pictures/pet-5728249.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,6 +90,11 @@ main {
         font-size: 15px;
 
     }
+
+    .contentSize {
+        height: 50px;
+
+    }
     /*.scaleText1 {*/
     /*    font-size: 12px;*/
 
@@ -99,9 +104,17 @@ main {
 @media (min-width: 1000px) {
     .resizeimg {
         width: auto;
-        height: 350px;
+        height: 200px;
     }
     .scaleText {
         font-size: 20px;
     }
+    .contentSize {
+
+        height: 50px;
+    }
+}
+
+button[disabled="disabled"] {
+    pointer-events: none;
 }
