@@ -47,8 +47,8 @@ class MainPage extends Component {
 
                         {/*<div className="row  center-align">*/}
                         {/*    <div className=" col s12">*/}
-                        {/*        /!*<span className="white-text Caveat">Custom Designs </span>*!/*/}
-                        {/*        <h1 className="center-align center Caveat white-text sizeFont">Welcome!</h1>*/}
+                                {/*<span className="white-text Caveat">Custom Designs </span>*/}
+                                <h1 className="center-align center Caveat white-text sizeFont">Welcome!</h1>
 
                         {/*        <div className=" transparent z-depth-0 Caveat card center container">*/}
 
