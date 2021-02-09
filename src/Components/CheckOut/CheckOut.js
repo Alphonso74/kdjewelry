@@ -10,9 +10,18 @@ import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
 import Order from "../MyOrder/Order";
 import M from "materialize-css/dist/js/materialize.min";
+import {Link, Redirect} from "react-router-dom";
+import {Route} from 'react-router-dom'
+
+import history from '../../history';
 
 
 class CheckOut extends Component {
+
+    state = {
+        authRedirect : null
+
+    }
 
 
 submitOrder = () => {
@@ -21,8 +30,9 @@ submitOrder = () => {
 
 
     const elem = document.getElementById('modal13');
-    const instance = M.Modal.init(elem, {dismissible: true});
+    const instance = M.Modal.init(elem, {dismissible: false });
     instance.open();
+
 
 
     // if(instance.closed){
@@ -36,12 +46,24 @@ render() {
     return (
         <body className="backgroundimg12345 ">
 
+        {this.state.authRedirect}
+
         <div id="modal13" className="modal modal-fixed-footer Caveat">
             <div className="modal-content center-align">
                 <h4>Your Order Has Been Submitted!</h4>
-                <p>Your order will go directly to Kyleigh, and she will contact you through the email provided.</p>
-                <p>Thanks!</p>
-                <i className="material-icons centerAlign">thumb_up</i>
+                <p>Your order will go directly to Kyleigh, and she will contact you through the email provided. Thanks!</p>
+
+                {/*Attempting to navigate to Home page after modal close*/}
+
+
+                <Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/' >Back to Home!</Link>
+
+                {/*<Route render={({ history}) => (*/}
+                {/*    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/') }}> Back To Main Page</button>*/}
+
+                {/*        )} />*/}
+                {/*<i className="material-icons centerAlign">thumb_up</i>*/}
+
             </div>
 
         </div>

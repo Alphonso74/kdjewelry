@@ -12,25 +12,20 @@ import M from "materialize-css/dist/js/materialize.min";
 class Customs extends Component {
 
     state = {
-
         itemName: null,
         itemPrice: 0,
         itemComponents: {
-
             itemType: null,
             style: null,
             wireType: null,
             beadType: null,
             specialInstructions: 'None'
-
         },
         done: false,
         button: (
-
             <button className=" Caveat waves-effect waves-light btn-large white black-text hoverable disabled" ><i
                 className="material-icons right" >add_task</i>Add Item</button>
         )
-
     };
 
     optionClick1 = () => {
@@ -42,6 +37,15 @@ class Customs extends Component {
         document.getElementById('Necklace').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('Bracelet').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        {
+
+            this.setState({button: (
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
 
     };
 
@@ -57,6 +61,18 @@ class Customs extends Component {
         document.getElementById('Bracelet').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
 
+        if(this.state.itemComponents.beadType !== null &&  this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     };
 
     optionClick3 = () => {
@@ -71,7 +87,18 @@ class Customs extends Component {
         // document.getElementById('Test').setAttribute("class", "style3");
         document.getElementById('Ring').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null &&  this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        {
 
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     };
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -87,6 +114,18 @@ class Customs extends Component {
         document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('Wrapped').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null &&  this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     }
 
     optionClick5 = () => {
@@ -100,6 +139,18 @@ class Customs extends Component {
         document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('Wrapped').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null &&  this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     }
 
     optionClick6 = () => {
@@ -113,6 +164,18 @@ class Customs extends Component {
         document.getElementById('Wrapped').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('Diamond').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null &&  this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     }
 
     optionClick7 = () => {
@@ -126,6 +189,18 @@ class Customs extends Component {
         document.getElementById('Spiral').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null &&  this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -142,6 +217,18 @@ class Customs extends Component {
         // document.getElementById('Spiral').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         // document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null  )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     }
 
     optionClick9 = () => {
@@ -156,21 +243,21 @@ class Customs extends Component {
         // document.getElementById('Spiral').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         // document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     }
 
-    optionClick9 = () => {
 
-        this.setState({itemComponents: {...this.state.itemComponents, wireType: 'Brass' }});
-
-        // console.log('poop');
-        document.getElementById('Silver').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
-        document.getElementById('Brass').setAttribute("class", "card-content transparent z-depth-0 Caveat style1 contentSize valign-wrapper");
-
-        // document.getElementById('Diamond').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
-        // document.getElementById('Spiral').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
-        // document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
-
-    }
 
     optionClick10 = () => {
 
@@ -184,6 +271,18 @@ class Customs extends Component {
         document.getElementById('Green').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('White').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        if( this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
     }
 
     optionClick11 = () => {
@@ -197,6 +296,19 @@ class Customs extends Component {
         document.getElementById('Green').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('White').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+
+        if( this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
         // document.getElementById('Diamond').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         // document.getElementById('Spiral').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         // document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
@@ -214,12 +326,27 @@ class Customs extends Component {
         document.getElementById('Blue').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         document.getElementById('White').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+
+        if( this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        {
+
+
+            // console.log('hello');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
         // document.getElementById('Diamond').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         // document.getElementById('Spiral').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         // document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
     }
     optionClick13 = () => {
+
+
 
         this.setState({itemComponents: {...this.state.itemComponents, beadType: 'White' }});
 
@@ -233,6 +360,22 @@ class Customs extends Component {
         // document.getElementById('Spiral').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
         // document.getElementById('Triangular').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
 
+        console.log('done1');
+
+
+        if( this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        {
+
+
+            console.log('done');
+            this.setState({button: (
+
+
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                )})
+        }
+
     }
 
 
@@ -245,6 +388,14 @@ class Customs extends Component {
         const elem = document.getElementById('modal2');
         const instance = M.Modal.init(elem, {dismissible: true});
         instance.open();
+
+            this.setState({button: (
+
+
+                    <button className=" Caveat waves-effect waves-light btn-large white black-text hoverable disabled"  ><i
+                        className="material-icons right" >add_task</i>Add Item</button>
+                )})
+
 
 
         console.log("poopy")
@@ -292,31 +443,33 @@ class Customs extends Component {
         console.log(this.state.itemComponents.style + " " + this.state.itemComponents.wireType + " " + this.state.itemComponents.beadType + " " + this.state.itemComponents.itemType);
 
 
-        let button = null;
+        // let button = null;
 
-        if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
-        {
-
-
-            // console.log('hello');
-            button = (
-
-
-                <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-            className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
-            )
-
-        }
-        else{
-
-            console.log('hello23');
-
-            button = (
-                <button className=" Caveat waves-effect waves-light btn-large white black-text hoverable disabled"  ><i
-                    className="material-icons right" >add_task</i>Add Item</button>
-            )
-
-        }
+        // if(this.state.itemComponents.beadType !== null && this.state.itemComponents.itemType !== null && this.state.itemComponents.style !== null && this.state.itemComponents.wireType !== null )
+        // {
+        //
+        //
+        //     // console.log('hello');
+        //     this.setState({button: (
+        //
+        //
+        //             <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
+        //                 className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+        //         )})
+        // }
+        // else{
+        //
+        //     console.log('hello23');
+        //
+        //     this.setState({button: (
+        //
+        //
+        //             <button className=" Caveat waves-effect waves-light btn-large white black-text hoverable disabled"  ><i
+        //                 className="material-icons right" >add_task</i>Add Item</button>
+        //         )})
+        //
+        //
+        // }
 
 
 
@@ -393,6 +546,7 @@ class Customs extends Component {
                 <h2 className="card-title center-align center white-text Caveat">Choose a Style:</h2>
 
                 <div className="row text-center container">
+                    <div className="container">
                     <div className="col s6" >
                         <div className="card"  onClick={this.optionClick4}>
                             <div className="card-header card-image   ">
@@ -417,9 +571,11 @@ class Customs extends Component {
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div className="row text-center container">
 
+                    <div className="container">
 
 
                 <div className="col s6">
@@ -444,12 +600,14 @@ class Customs extends Component {
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
 
 
 
 
                 <h2 className="card-title center-align center  Caveat white-text">Choose a Wire Type:</h2>
+                <div className="container">
 
                 <div className="row text-center container">
                     <div className="col s6" >
@@ -477,9 +635,11 @@ class Customs extends Component {
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <h2 className="card-title center-align center white-text Caveat">Choose a bead Type:</h2>
 
+                <div className="container">
 
                 <div className="row text-center container">
                     <div className="col s6" >
@@ -534,6 +694,7 @@ class Customs extends Component {
                         </div>
                     </div>
                 </div>
+                </div>
 
 
 
@@ -542,7 +703,7 @@ class Customs extends Component {
 
 
                 <div className="center">
-                    {button}
+                    {this.state.button}
                     {/*<h1 className="white-text">Price Total: ${this.props.currPrice}</h1>*/}
                     <br/>
                     <br/>
