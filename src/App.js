@@ -7,6 +7,9 @@ import Contact from './Components/Contact/Contact';
 import Customs from './Components/Customs/Customs';
 import Reviews from "./Components/Review/Reviews";
 import CheckOut from "./Components/CheckOut/CheckOut";
+import {connect} from 'react-redux';
+import * as actionTypes from '../src/store/actions';
+
 
 class App extends Component {
 
@@ -14,6 +17,11 @@ class App extends Component {
 
         currentComponent: null
     };
+
+    componentDidMount() {
+        this.props.CHECK_STATE();
+    }
+
 
     render(){
 
@@ -55,4 +63,13 @@ class App extends Component {
     }
 }
 
-export default withRouter(App);
+const mapDispatchToProps = dispatch => {
+
+    return {
+
+        CHECK_STATE: () => dispatch({type: actionTypes.CHECK_STATE})
+
+    }
+}
+
+export default withRouter(connect(null, mapDispatchToProps)(App));

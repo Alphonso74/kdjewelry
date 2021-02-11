@@ -12,6 +12,9 @@ import Order from "../MyOrder/Order";
 import M from "materialize-css/dist/js/materialize.min";
 import {Link, Redirect} from "react-router-dom";
 import {Route} from 'react-router-dom'
+import MainPage from "../MainPage/MainPage";
+import { useHistory } from 'react-router-dom';
+
 
 import history from '../../history';
 
@@ -34,6 +37,7 @@ submitOrder = () => {
     instance.open();
 
 
+    // history.push('/');
 
     // if(instance.closed){
     //
@@ -56,10 +60,10 @@ render() {
                 {/*Attempting to navigate to Home page after modal close*/}
 
 
-                <Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/' >Back to Home!</Link>
+                {/*<Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/' >Back to Home!</Link>*/}
 
                 {/*<Route render={({ history}) => (*/}
-                {/*    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/') }}> Back To Main Page</button>*/}
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/') }}> Back To Main Page</button>
 
                 {/*        )} />*/}
                 {/*<i className="material-icons centerAlign">thumb_up</i>*/}

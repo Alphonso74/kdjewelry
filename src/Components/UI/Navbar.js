@@ -19,7 +19,7 @@ class Navbar extends Component{
 
         let bar = null;
 
-        if(this.props.numItems === 0 || this.props.numItems < 0 || this.props.numItems === null){
+        if(this.props.numItems === 0 || this.props.numItems < 0 || this.props.numItems === null || this.props.numItems === undefined){
 
             bar = (
 

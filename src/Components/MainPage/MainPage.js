@@ -35,6 +35,9 @@ class MainPage extends Component {
     render(){
 
 
+        let numItem1 = null;
+
+
 
         return (
             <body className="backgroundimg1 ">

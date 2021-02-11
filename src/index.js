@@ -26,11 +26,12 @@ const logger = store => {
 const store = createStore(reducer, applyMiddleware(logger));
 
 const app = (
-    <Provider store={store}>
     <BrowserRouter>
+    <Provider store={store}>
         <App/>
-    </BrowserRouter>
     </Provider>
+    </BrowserRouter>
+
 );
 
 ReactDOM.render(

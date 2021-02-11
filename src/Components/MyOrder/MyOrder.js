@@ -24,7 +24,7 @@ class MyOrder extends Component {
 
         let currItems = null;
 
-        if(this.props.numItems === 0 || this.props.numItems < 0 || this.props.numItems === null) {
+        if(this.props.numItems === 0 || this.props.numItems < 0 || this.props.numItems === null || this.props.numItems === undefined) {
             currItems = (
 
 

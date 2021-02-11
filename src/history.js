@@ -1,4 +1,5 @@
+import { createBrowserHistory } from "history";
 
-import { createBrowserHistory as history} from 'history';
+const history = createBrowserHistory({forceRefresh:true});
 
-export default history();
+export default history;
