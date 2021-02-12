@@ -36,6 +36,8 @@ submitOrder = () => {
     const instance = M.Modal.init(elem, {dismissible: false });
     instance.open();
 
+    this.props.resetStore();
+
 
     // history.push('/');
 
@@ -200,7 +202,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onItemAdded: (itemName, itemPrice) => dispatch({type: actionTypes.ADD_ITEMTOCART, itemName: itemName, itemPrice: itemPrice  }),
-        onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  })
+        onItemRemove: (itemID, itemPrice) => dispatch({type: actionTypes.REMOVE_ITEMFROMCART, itemID: itemID,itemPrice: itemPrice  }),
+        resetStore: () => dispatch({type: actionTypes.RESET_STORE})
 
     }
 }

@@ -36,6 +36,11 @@ const reducer = (state = initialState, action) => {
             //
             // };
 
+            if(state.Items === null || state.Items === undefined){
+
+                state.Items = []
+            }
+
 
 
             return updateObject(state, {Items: state.Items.concat({
@@ -64,9 +69,16 @@ const reducer = (state = initialState, action) => {
 
         case actionTypes.RESET_STORE:
 
+            sessionStorage.clear();
+            sessionStorage.removeItem('Items');
 
-            return null;
+            return {
+                // ...state,
+                Items: [],
+                numberOfItems: 0,
+                totalPrice:  0
 
+            };
 
             default:
             return state;
