@@ -10,6 +10,9 @@ import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
 import {Link, NavLink, Redirect} from 'react-router-dom';
 import CheckOut from "../CheckOut/CheckOut";
+import history from '../../history';
+
+
 
 class MyOrder extends Component {
 
@@ -94,7 +97,7 @@ class MyOrder extends Component {
                         </table>
                         <br/>
 
-                        <Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/CheckOut' >Check Out</Link>
+                        <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/CheckOut') }} >Check Out</button>
 
                     </div>
 
