@@ -35,7 +35,7 @@ class Reviews extends Component {
 
 
     componentDidMount() {
-        // console.log("Poop");
+        console.log("Reviews Poop");
 
         // var elems = document.querySelectorAll('.modal');
 

@@ -94,6 +94,7 @@ const reducer = (state = initialState, action) => {
             if(Items2 === null || Items2 === undefined || Items2 === '') {
 
                 sessionStorage.removeItem('Items');
+                sessionStorage.clear();
 
                 return {
                     Items: [],
