@@ -12,6 +12,20 @@ import poop from '../../pictures/insta1.png';
 import link3 from '../../pictures/linkedin.png';
 import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
+import './materialize-social.css';
+import * as Icon from 'react-feather';
+import linky from '../../pictures/jewtable.jpg';
+import linky1 from '../../pictures/jewcollection.jpg';
+import linky2 from '../../pictures/jewhand.jpg';
+import linky3 from '../../pictures/jewelry.jpeg';
+import linky4 from '../../pictures/jewelry1.jpg';
+import linky5 from '../../pictures/jewelry3.jpg';
+
+
+
+
+
+
 
 
 
@@ -27,6 +41,17 @@ class MainPage extends Component {
 
         var elems = document.querySelectorAll('.slider');
         var instances = M.Slider.init(elems, {});
+
+
+
+
+            var elems1 = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems1, {
+                indicators: true,
+            });
+
+
+
 
 
     }
@@ -51,9 +76,22 @@ class MainPage extends Component {
                         {/*<div className="row  center-align">*/}
                         {/*    <div className=" col s12">*/}
                                 {/*<span className="white-text Caveat">Custom Designs </span>*/}
-                                <h1 className="center-align center Caveat white-text sizeFont">Welcome!</h1>
 
-                        {/*        <div className=" transparent z-depth-0 Caveat card center container">*/}
+                                <h1 className="center-align center Caveat white-text sizeFont s12">Welcome!</h1>
+
+
+                    {/*<div className='section center center-align transparent z-depth-0'>*/}
+                    {/*<Icon.Instagram color="white" size={48} position='center'/>*/}
+                    {/*</div>*/}
+                    {/*<div className='center'>*/}
+                    {/*<a className="waves-effect waves-light btn social instagram">*/}
+                    {/*    <i className="fa fa-instagram"></i> Instagram</a>*/}
+                    {/*</div>*/}
+
+
+
+
+                    {/*        <div className=" transparent z-depth-0 Caveat card center container">*/}
 
 
 
@@ -269,6 +307,83 @@ class MainPage extends Component {
         {/*                </div>*/}
 
         {/*            </div>*/}
+        <div className="   container center center-align row">
+        <div className=" transparent z-depth-0 card col s12 center  ">
+                    <h2 className="header white-text Caveat center-align sizeFont">Catalog</h2>
+
+        </div>
+        </div>
+
+                    <h1 className="center Caveat  white-text">Rings</h1>
+
+                    <div className="carousel center container">
+
+
+                        <a className="carousel-item" ><img
+                            src={photo3}/></a>
+                        <a className="carousel-item" ><img
+                            src={linky}/></a>
+                        <a className="carousel-item"><img src={linky2}/></a>
+                        <a className="carousel-item" ><img
+                            src={linky3}/></a>
+                        <a className="carousel-item" ><img
+                            src={linky4}/></a>
+                    </div>
+
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+
+
+
+                    <h1 className="center  Caveat white-text">Bracelets</h1>
+
+                    <div className="carousel center container">
+
+
+                        <a className="carousel-item" ><img
+                            src={photo}/></a>
+                        <a className="carousel-item" ><img
+                            src={photo1}/></a>
+                        <a className="carousel-item" ><img src={photo2}/></a>
+                        <a className="carousel-item" ><img
+                            src={photo3}/></a>
+                        <a className="carousel-item" ><img
+                            src={photo}/></a>
+                    </div>
+
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+
+
+                    <h1 className="center  Caveat white-text">Necklaces</h1>
+
+                    <div className="carousel center container">
+
+
+                        <a className="carousel-item" ><img
+                            src={linky3}/></a>
+                        <a className="carousel-item" ><img
+                            src={linky3}/></a>
+                        <a className="carousel-item" ><img src={linky1}/></a>
+                        <a className="carousel-item" ><img
+                            src={linky5}/></a>
+                        <a className="carousel-item" ><img
+                            src={linky}/></a>
+                    </div>
+
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
 
 
                 </main>

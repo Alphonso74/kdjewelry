@@ -56,6 +56,8 @@ render() {
 
         <div id="modal13" className="modal modal-fixed-footer Caveat">
             <div className="modal-content center-align">
+                <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/') }}> Back To Main Page</button>
+                <br/>
                 <h4>Your Order Has Been Submitted!</h4>
                 <p>Your order will go directly to Kyleigh, and she will contact you through the email provided. Thanks!</p>
 
@@ -65,7 +67,6 @@ render() {
                 {/*<Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/' >Back to Home!</Link>*/}
 
                 {/*<Route render={({ history}) => (*/}
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/') }}> Back To Main Page</button>
 
                 {/*        )} />*/}
                 {/*<i className="material-icons centerAlign">thumb_up</i>*/}
