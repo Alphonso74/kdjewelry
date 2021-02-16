@@ -4,11 +4,11 @@
     font-size: 30px !important;
 }
 
-.active {
-    /*background-color: black;*/
-    color: deeppink;
+/*.active {*/
+/*    !*background-color: black;*!*/
+/*    color: deeppink;*/
 
-}
+/*}*/
 
 .activeSide {
     background-color: white;
@@ -39,3 +39,4 @@ u {
     background-size: cover;
     background-position: center;
 }
+

@@ -392,9 +392,9 @@ class MainPage extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col  s6 center-align">
-                                <h5 className="white-text">Rings</h5>
-                                <h5 className="white-text ">Braclets</h5>
-                                <h5 className="white-text ">Necklaces</h5>
+                                <h5 className="white-text">Customs</h5>
+                                <h5 className="white-text ">Reviews</h5>
+                                <h5 className="white-text ">Orders</h5>
 
                             </div>
                             <div className="col  s6 center-align">
