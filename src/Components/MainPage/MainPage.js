@@ -46,7 +46,7 @@ class MainPage extends Component {
 
 
             var elems1 = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems1, {
+            var instances1 = M.Carousel.init(elems1, {
                 indicators: true,
             });
 
@@ -77,7 +77,7 @@ class MainPage extends Component {
                         {/*    <div className=" col s12">*/}
                                 {/*<span className="white-text Caveat">Custom Designs </span>*/}
 
-                                <h1 className="center-align center Caveat white-text sizeFont s12">Welcome!</h1>
+                                <h1 className="center-align center Caveat white-text sizeFont s12"><u>Welcome!</u></h1>
 
 
                     {/*<div className='section center center-align transparent z-depth-0'>*/}
@@ -309,7 +309,7 @@ class MainPage extends Component {
         {/*            </div>*/}
         <div className="   container center center-align row">
         <div className=" transparent z-depth-0 card col s12 center  ">
-                    <h2 className="header white-text Caveat center-align sizeFont">Catalog</h2>
+                    <h2 className="header white-text Caveat center-align sizeFont"><u>Catalog</u></h2>
 
         </div>
         </div>
@@ -331,8 +331,7 @@ class MainPage extends Component {
                     </div>
 
 
-                    <br/>
-                    <br/>
+
                     <br/>
                     <br/>
 
@@ -356,8 +355,7 @@ class MainPage extends Component {
                     </div>
 
 
-                    <br/>
-                    <br/>
+
                     <br/>
                     <br/>
 
@@ -380,8 +378,7 @@ class MainPage extends Component {
                     </div>
 
 
-                    <br/>
-                    <br/>
+
                     <br/>
                     <br/>
 

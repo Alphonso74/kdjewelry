@@ -40,4 +40,16 @@ main {
     size: 10px;
 }
 
+u {
+    padding-bottom:10px;
+    text-decoration:none;
+    border-bottom:3px solid #ffffff;
+}
+
+img {
+
+    object-fit: cover;
+}
+
+
 

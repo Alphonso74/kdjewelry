@@ -118,3 +118,8 @@ main {
 button[disabled="disabled"] {
     pointer-events: none;
 }
+
+img {
+
+    object-fit: cover;
+}

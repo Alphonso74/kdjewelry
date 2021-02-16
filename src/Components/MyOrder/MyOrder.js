@@ -2,14 +2,16 @@ import React, {Component} from 'react';
 import Navbar from "../UI/Navbar";
 import Order from "./Order";
 import './MyOrderCSS.css';
-// import photo1 from "../../pictures/jewcrystal.jpg";
-// import photo2 from "../../pictures/jewhand2.jpg";
-// import photo3 from "../../pictures/jewcone.jpg";
-// import photo from "../../pictures/jewelry1.jpg";
+import photo1 from "../../pictures/jewcrystal.jpg";
+import photo2 from "../../pictures/jewhand2.jpg";
+import photo3 from "../../pictures/jewcone.jpg";
+import photo from "../../pictures/jewelry1.jpg";
 import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
 import {Link, NavLink, Redirect} from 'react-router-dom';
 import CheckOut from "../CheckOut/CheckOut";
+import M from "materialize-css/dist/js/materialize.min";
+
 import history from '../../history';
 
 
@@ -23,6 +25,49 @@ class MyOrder extends Component {
 
     };
 
+    componentDidMount() {
+
+        // let carouselElem = document.querySelectorAll('.carousel.carousel-slider');
+        //
+        //
+        // M.Carousel.init(carouselElem,{
+        //     indicators : true,
+        //     fullWidth : true,
+        //     autoplay: true
+        // });
+
+        // setTimeout(()=>{
+        //     M.Carousel.getInstance(carouselElem[0]).next();
+        // },2000);
+
+
+            // initialize carousel
+            const carousel = document.querySelectorAll('.carousel');
+            M.Carousel.init(carousel, {
+                fullWidth: true,
+                indicators: true, // this option is require for autoplay functionnality
+            });
+
+            let indicatorItems = document.querySelectorAll('.carousel .indicator-item'),
+                slideTime = 2000,
+                activeClass = "active";
+
+            setInterval(() => {
+                indicatorItems.forEach(el => {
+                    if (el.classList.contains(activeClass)) {
+                        const sib = el.nextElementSibling;
+                        if (sib == null) {
+                            indicatorItems[0].click();
+                        } else {
+                            sib.click()
+                        }
+                    }
+                });
+            }, slideTime);
+
+
+    }
+
     render(){
 
         let currItems = null;
@@ -33,6 +78,24 @@ class MyOrder extends Component {
 
                 <div>
                     <h1 className="center center-align white-text Caveat">No Items Just Yet......</h1>
+
+                    <h2 className="center center-align white-text Caveat">Check out these other designs</h2>
+                    <div className="carousel carousel-slider center">
+                        <div className="carousel-fixed-item center white-text">
+                        </div>
+                        <div className="carousel-item white-text" >
+                            <img src={photo}/>
+                        </div>
+                        <div className="carousel-item white-text" >
+                            <img src={photo3}/>
+                        </div>
+                        <div className="carousel-item white-text" >
+                            <img src={photo2}/>
+                        </div>
+                        <div className="carousel-item white-text" >
+                            <img src={photo1}/>
+                        </div>
+                    </div>
                 </div>
             )
 

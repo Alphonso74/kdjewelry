@@ -73,10 +73,10 @@ class Navbar extends Component{
                         <ul>
                                 <li  ><NavLink className="white-text hoverable btn-floating red"  to='/' exact ><i className="material-icons">home</i></NavLink></li>
                                 {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
-                                <li ><NavLink className="white-text hoverable btn-floating yellow darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>
-                                <li ><NavLink className="white-text hoverable btn-floating green" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>
+                                <li ><NavLink className="white-text hoverable btn-floating blue darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>
+                                <li ><NavLink className="white-text hoverable btn-floating pink" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>
                                 {/*<li ><NavLink className="white-text hoverable btn-floating blue" to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>*/}
-                                <li ><NavLink className="white-text hoverable btn-floating orange" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>
+                                <li ><NavLink className="white-text hoverable btn-floating green" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>
 
 
                             {/*<li><a className="btn-floating red"><i className="material-icons">timeline</i></a></li>*/}
@@ -141,10 +141,10 @@ class Navbar extends Component{
                     <ul>
                         <li  ><NavLink className="white-text hoverable btn-floating red"  to='/' exact ><i className="material-icons">home</i></NavLink></li>
                         {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
-                        <li ><NavLink className="white-text hoverable btn-floating yellow darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>
-                        <li ><NavLink className="white-text hoverable btn-floating green" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>
+                        <li ><NavLink className="white-text hoverable btn-floating blue darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>
+                        <li ><NavLink className="white-text hoverable btn-floating pink" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>
                         {/*<li ><NavLink className="white-text hoverable btn-floating blue" to='/MyOrder' exact >{this.props.numItems}</NavLink></li>*/}
-                        <li ><NavLink className="white-text hoverable btn-floating orange" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>
+                        <li ><NavLink className="white-text hoverable btn-floating green" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>
 
                         {/*<li><a className="btn-floating red"><i className="material-icons">timeline</i></a></li>*/}
                         {/*<li><a className="btn-floating yellow darken-1"><i className="material-icons">voice_chat</i></a>*/}
