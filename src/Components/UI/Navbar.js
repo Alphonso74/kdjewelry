@@ -103,7 +103,7 @@ class Navbar extends Component{
             <div>
 
 
-                <nav className=" transparent z-depth-0 container ">
+                <nav className=" transparent z-depth-0 container  ">
                     <div className="nav-wrapper  ">
 
                         {/*<i className="brand-logo left Caveat center-align white-text "><NavLink  to='/' exact >Jewelry By Ky</NavLink></i>*/}
