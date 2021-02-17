@@ -42,8 +42,8 @@ class Customs extends Component {
 
             this.setState({button: (
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
 
@@ -69,8 +69,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     };
@@ -95,8 +95,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     };
@@ -122,8 +122,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     }
@@ -147,8 +147,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     }
@@ -172,8 +172,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     }
@@ -197,8 +197,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     }
@@ -225,8 +225,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     }
@@ -251,8 +251,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     }
@@ -279,8 +279,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
     }
@@ -305,8 +305,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
         // document.getElementById('Diamond').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
@@ -335,8 +335,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
         // document.getElementById('Diamond').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper");
@@ -371,8 +371,8 @@ class Customs extends Component {
             this.setState({button: (
 
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1"><i
-                        className="material-icons right" onClick={this.addItem}>add_task</i>Add Item</button>
+                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" id="button1" onClick={this.addItem}><i
+                        className="material-icons right" >add_task</i>Add Item</button>
                 )})
         }
 
@@ -401,7 +401,7 @@ class Customs extends Component {
         console.log("poopy")
        return  (
            this.props.onItemAdded(this.state.itemName, this.state.itemPrice, this.state.itemComponents),
-               this.setState({itemName: 'None', itemComponents: { itemType: 'None', beadType: 'None', wireType: 'None', style: 'None'  }, itemPrice: 0   }),
+               this.setState({itemName: null, itemComponents: { itemType: null, beadType: null, wireType: null, style: null  }, itemPrice: 0   }),
                document.getElementById('Bracelet').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper"),
                document.getElementById('Necklace').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper"),
                document.getElementById('Ring').setAttribute("class", "card-content transparent z-depth-0 Caveat style3 contentSize valign-wrapper"),
@@ -476,12 +476,23 @@ class Customs extends Component {
         return (
             <body className="backgroundimg123 ">
 
-            <div id="modal2" className="modal modal-fixed-footer Caveat">
-                <div className="modal-content center-align">
+            {/*<div id="modal2" className="modal modal-fixed-footer Caveat">*/}
+            {/*    <div className="modal-content center-align">*/}
+            {/*        <h4>Item Added!</h4>*/}
+            {/*        <i className="material-icons centerAlign">thumb_up</i>*/}
+            {/*    </div>*/}
+
+            {/*</div>*/}
+
+            <div id="modal2" className="modal modal-fixed-footer Caveat modal2">
+                <div className="modal-content center center-align">
                     <h4>Item Added!</h4>
                     <i className="material-icons centerAlign">thumb_up</i>
-                </div>
 
+                </div>
+                <div className="modal-footer center center-align">
+                    <a  className="modal-action modal-close waves-effect waves-red btn red darken-3">Close</a>
+                </div>
             </div>
 
 

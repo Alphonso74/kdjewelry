@@ -34,11 +34,13 @@ class Navbar extends Component{
                     <nav className=" transparent z-depth-0 container">
                         <div className="nav-wrapper  ">
 
-                            <i className="brand-logo left  Caveat center-align white-text "><NavLink  to='/' exact >Jewelry By Ky</NavLink></i>
+                            {/*<i className="brand-logo left  Caveat center-align white-text "><NavLink  to='/' exact >Jewelry By Ky</NavLink></i>*/}
                             <i className=" brand-logo right hide-on-large-only white-text"><NavLink  to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></i>
-                            {/*<a href="/" data-target="mobile-demo" className="sidenav-trigger">*/}
-                                {/*<i className="material-icons white-text">menu</i></a>*/}
-                            <ul className="right hide-on-med-and-down ">
+                            <i className=" brand-logo center hide-on-large-only white-text"><NavLink  to='/' exact ><i className="material-icons ">home</i></NavLink></i>
+
+                            <a href="/" data-target="mobile-demo" className="sidenav-trigger">
+                                <i className="material-icons white-text left">menu</i></a>
+                            <ul className="center hide-on-med-and-down ">
                                 <div className="Caveat ">
                                     <li  ><NavLink  to='/' exact >Home</NavLink></li>
                                     {/*<li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>*/}
@@ -55,38 +57,38 @@ class Navbar extends Component{
                         </div>
                     </nav>
 
+                    <ul className="sidenav sidenav-close  navimg" id="mobile-demo">
+                        <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>
+                        {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
+                        <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs - Create Your Own!</NavLink></li>
+                        <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>
+                        {/*<li ><NavLink className="white-text hoverable" to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>*/}
+                        <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>
+
+                    </ul>
+
                     {/*<ul className="sidenav sidenav-close  navimg" id="mobile-demo">*/}
-                    {/*    <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>*/}
-                    {/*    /!*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*!/*/}
-                    {/*    <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs</NavLink></li>*/}
-                    {/*    <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>*/}
-                    {/*    <li ><NavLink className="white-text hoverable" to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>*/}
-                    {/*    <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>*/}
-
-                    {/*</ul>*/}
-
-                    {/*<ul className="sidenav sidenav-close  navimg" id="mobile-demo">*/}
-                    <div className="fixed-action-btn horizontal click-to-toggle hide-on-large-only">
-                        <a className="btn-floating btn-large purple">
-                            <i className="material-icons">menu</i>
-                        </a>
-                        <ul>
-                                <li  ><NavLink className="white-text hoverable btn-floating red"  to='/' exact ><i className="material-icons">home</i></NavLink></li>
-                                {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
-                                <li ><NavLink className="white-text hoverable btn-floating blue darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>
-                                <li ><NavLink className="white-text hoverable btn-floating pink" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>
-                                {/*<li ><NavLink className="white-text hoverable btn-floating blue" to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>*/}
-                                <li ><NavLink className="white-text hoverable btn-floating green" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>
+                    {/*<div className="fixed-action-btn horizontal click-to-toggle hide-on-large-only">*/}
+                    {/*    <a className="btn-floating btn-large purple">*/}
+                    {/*        <i className="material-icons">menu</i>*/}
+                    {/*    </a>*/}
+                    {/*    <ul>*/}
+                    {/*            <li  ><NavLink className="white-text hoverable btn-floating red"  to='/' exact ><i className="material-icons">home</i></NavLink></li>*/}
+                    {/*            /!*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*!/*/}
+                    {/*            <li ><NavLink className="white-text hoverable btn-floating blue darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>*/}
+                    {/*            <li ><NavLink className="white-text hoverable btn-floating pink" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>*/}
+                    {/*            /!*<li ><NavLink className="white-text hoverable btn-floating blue" to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>*!/*/}
+                    {/*            <li ><NavLink className="white-text hoverable btn-floating green" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>*/}
 
 
-                            {/*<li><a className="btn-floating red"><i className="material-icons">timeline</i></a></li>*/}
-                            {/*<li><a className="btn-floating yellow darken-1"><i className="material-icons">voice_chat</i></a>*/}
-                            {/*</li>*/}
-                            {/*<li><a className="btn-floating green"><i className="material-icons">cloud_upload</i></a>*/}
-                            {/*</li>*/}
-                            {/*<li><a className="btn-floating blue"><i className="material-icons">attach_file</i></a></li>*/}
-                        </ul>
-                    </div>
+                    {/*        /!*<li><a className="btn-floating red"><i className="material-icons">timeline</i></a></li>*!/*/}
+                    {/*        /!*<li><a className="btn-floating yellow darken-1"><i className="material-icons">voice_chat</i></a>*!/*/}
+                    {/*        /!*</li>*!/*/}
+                    {/*        /!*<li><a className="btn-floating green"><i className="material-icons">cloud_upload</i></a>*!/*/}
+                    {/*        /!*</li>*!/*/}
+                    {/*        /!*<li><a className="btn-floating blue"><i className="material-icons">attach_file</i></a></li>*!/*/}
+                    {/*    </ul>*/}
+                    {/*</div>*/}
 
                     {/*</ul>*/}
 
@@ -104,12 +106,13 @@ class Navbar extends Component{
                 <nav className=" transparent z-depth-0 container ">
                     <div className="nav-wrapper  ">
 
-                        <i className="brand-logo left Caveat center-align white-text "><NavLink  to='/' exact >Jewelry By Ky</NavLink></i>
+                        {/*<i className="brand-logo left Caveat center-align white-text "><NavLink  to='/' exact >Jewelry By Ky</NavLink></i>*/}
                         <i className=" brand-logo right Caveat hide-on-large-only white-text "><NavLink to='/MyOrder' exact >Cart: {this.props.numItems}</NavLink></i>
+                        <i className=" brand-logo center hide-on-large-only white-text"><NavLink  to='/' exact ><i className="material-icons ">home</i></NavLink></i>
 
-                        {/*<a href="/" data-target="mobile-demo" className="sidenav-trigger">*/}
-                        {/*    <i className="material-icons white-text">menu</i></a>*/}
-                        <ul className="right hide-on-med-and-down ">
+                        <a href="/" data-target="mobile-demo" className="sidenav-trigger">
+                            <i className="material-icons white-text left">menu</i></a>
+                        <ul className="center hide-on-med-and-down ">
                             <div className="Caveat ">
                                 <li  ><NavLink  to='/' exact >Home</NavLink></li>
                                 {/*<li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>*/}
@@ -125,34 +128,34 @@ class Navbar extends Component{
                     </div>
                 </nav>
 
-                {/*<ul className="sidenav sidenav-close  navimg" id="mobile-demo">*/}
-                {/*    <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>*/}
-                {/*    /!*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*!/*/}
-                {/*    <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs</NavLink></li>*/}
-                {/*    <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>*/}
-                {/*    <li ><NavLink className="white-text hoverable" to='/MyOrder' exact >Cart: {this.props.numItems}</NavLink></li>*/}
-                {/*    <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>*/}
+                <ul className="sidenav sidenav-close  navimg" id="mobile-demo">
+                    <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>
+                    {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
+                    <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs - Create Your Own!</NavLink></li>
+                    <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>
+                    {/*<li ><NavLink className="white-text hoverable" to='/MyOrder' exact >Cart: {this.props.numItems}</NavLink></li>*/}
+                    <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>
 
-                {/*</ul>*/}
-                <div className="fixed-action-btn horizontal click-to-toggle hide-on-large-only">
-                    <a className="btn-floating btn-large purple">
-                        <i className="material-icons">menu</i>
-                    </a>
-                    <ul>
-                        <li  ><NavLink className="white-text hoverable btn-floating red"  to='/' exact ><i className="material-icons">home</i></NavLink></li>
-                        {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
-                        <li ><NavLink className="white-text hoverable btn-floating blue darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>
-                        <li ><NavLink className="white-text hoverable btn-floating pink" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>
-                        {/*<li ><NavLink className="white-text hoverable btn-floating blue" to='/MyOrder' exact >{this.props.numItems}</NavLink></li>*/}
-                        <li ><NavLink className="white-text hoverable btn-floating green" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>
+                </ul>
+                {/*<div className="fixed-action-btn horizontal click-to-toggle hide-on-large-only">*/}
+                {/*    <a className="btn-floating btn-large purple">*/}
+                {/*        <i className="material-icons">menu</i>*/}
+                {/*    </a>*/}
+                {/*    <ul>*/}
+                {/*        <li  ><NavLink className="white-text hoverable btn-floating red"  to='/' exact ><i className="material-icons">home</i></NavLink></li>*/}
+                {/*        /!*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*!/*/}
+                {/*        <li ><NavLink className="white-text hoverable btn-floating blue darken-1"  to='/Customs' exact ><i className="material-icons">dashboard_customize</i></NavLink></li>*/}
+                {/*        <li ><NavLink className="white-text hoverable btn-floating pink" to='/Reviews' exact ><i className="material-icons">reviews</i></NavLink></li>*/}
+                {/*        /!*<li ><NavLink className="white-text hoverable btn-floating blue" to='/MyOrder' exact >{this.props.numItems}</NavLink></li>*!/*/}
+                {/*        <li ><NavLink className="white-text hoverable btn-floating green" to='/Contact' exact ><i className="material-icons">contact_phone</i></NavLink></li>*/}
 
-                        {/*<li><a className="btn-floating red"><i className="material-icons">timeline</i></a></li>*/}
-                        {/*<li><a className="btn-floating yellow darken-1"><i className="material-icons">voice_chat</i></a>*/}
-                        {/*</li>*/}
-                        {/*<li><a className="btn-floating green"><i className="material-icons">cloud_upload</i></a></li>*/}
-                        {/*<li><a className="btn-floating blue"><i className="material-icons">attach_file</i></a></li>*/}
-                    </ul>
-                </div>
+                {/*        /!*<li><a className="btn-floating red"><i className="material-icons">timeline</i></a></li>*!/*/}
+                {/*        /!*<li><a className="btn-floating yellow darken-1"><i className="material-icons">voice_chat</i></a>*!/*/}
+                {/*        /!*</li>*!/*/}
+                {/*        /!*<li><a className="btn-floating green"><i className="material-icons">cloud_upload</i></a></li>*!/*/}
+                {/*        /!*<li><a className="btn-floating blue"><i className="material-icons">attach_file</i></a></li>*!/*/}
+                {/*    </ul>*/}
+                {/*</div>*/}
 
 
             </div>

@@ -192,14 +192,27 @@ class Contact extends Component {
                 </div>
 
 
-                <div id="modal1" className="modal modal-fixed-footer Caveat">
-                    <div className="modal-content center-align">
+                {/*<div id="modal1" className="modal modal-fixed-footer Caveat">*/}
+                {/*    <div className="modal-content center-align">*/}
+                {/*        <h4>Thanks For The Message!</h4>*/}
+                {/*        <p>This message will go directly to Kyleigh, and she will contact you through the email provided.</p>*/}
+                {/*        <p>Thanks!</p>*/}
+                {/*        <i className="material-icons centerAlign">thumb_up</i>*/}
+                {/*    </div>*/}
+
+                {/*</div>*/}
+
+                <div id="modal1" className="modal modal-fixed-footer Caveat modal1">
+                    <div className="modal-content center center-align">
                         <h4>Thanks For The Message!</h4>
                         <p>This message will go directly to Kyleigh, and she will contact you through the email provided.</p>
                         <p>Thanks!</p>
                         <i className="material-icons centerAlign">thumb_up</i>
-                    </div>
 
+                    </div>
+                    <div className="modal-footer center center-align">
+                        <a  className="modal-action modal-close waves-effect waves-red btn red darken-3">Close</a>
+                    </div>
                 </div>
 
 
