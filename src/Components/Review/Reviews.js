@@ -23,7 +23,7 @@ class Reviews extends Component {
         name: '',
         first_name: '',
         last_name: '',
-        item: '',
+        item: null,
         message: '',
         sentMessage: false,
         modal: null,
@@ -110,6 +110,18 @@ class Reviews extends Component {
         window.event.preventDefault();
 
 
+        if(this.state.item === null){
+
+            const elem = document.getElementById('modal24');
+            const instance = M.Modal.init(elem, {dismissible: true});
+            instance.open();
+
+
+
+        }
+
+        else{
+
         const review = {
 
             name: this.state.name,
@@ -142,6 +154,7 @@ class Reviews extends Component {
 
 
 
+    }
     }
 
 
@@ -213,7 +226,16 @@ class Reviews extends Component {
 
 
 
+                <div id="modal24" className="modal modal-fixed-footer Caveat modal3">
+                    <div className="modal-content center center-align">
+                        <h4>Please select item type before submitting!</h4>
+                        <p>Thanks!</p>
 
+                    </div>
+                    <div className="modal-footer center center-align">
+                        <a  className="modal-action modal-close btn black white-text ">Close</a>
+                    </div>
+                </div>
 
 
 
