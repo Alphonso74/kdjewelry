@@ -63,3 +63,24 @@ table {
 .bodyHeight2 {
     height: 300px;
 }
+
+
+.modal3 {
+    left: 0;
+    right: 0;
+    background-color: #8e3db4;
+    padding: 0;
+    /*max-height: 40%;*/
+    height: 55% !important;
+    width: 80%;
+    will-change: top, opacity;
+}
+
+.modal-footer  {
+    border-radius: 0 0 2px 2px;
+    /*background-color: #01579b;*/
+    padding: 4px 6px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+}

@@ -21,10 +21,10 @@ import history from '../../history';
 
 class CheckOut extends Component {
 
-    state = {
-        authRedirect : null
-
-    }
+    // state = {
+    //     authRedirect : null
+    //
+    // }
 
 
 submitOrder = () => {
@@ -52,27 +52,40 @@ render() {
     return (
         <body className="backgroundimg12345 ">
 
-        {this.state.authRedirect}
+        {/*{this.state.authRedirect}*/}
 
-        <div id="modal13" className="modal modal-fixed-footer Caveat">
-            <div className="modal-content center-align">
-                <br/>
-                <h4>Your Order Has Been Submitted!</h4>
-                <p>Your order will go directly to Kyleigh, and she will contact you through the email provided. Thanks!</p>
-                <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/') }}> Back To Main Page</button>
+        {/*<div id="modal13" className="modal modal-fixed-footer Caveat">*/}
+        {/*    <div className="modal-content center-align">*/}
+        {/*        <br/>*/}
+        {/*        <h4>Your Order Has Been Submitted!</h4>*/}
+        {/*        <p>Your order will go directly to Kyleigh, and she will contact you through the email provided. Thanks!</p>*/}
+        {/*        <button className="Caveat waves-effect waves-light btn-large white black-text hoverable" onClick={() => { history.push('/') }}> Back To Main Page</button>*/}
 
-                {/*Attempting to navigate to Home page after modal close*/}
+        {/*        /!*Attempting to navigate to Home page after modal close*!/*/}
 
 
-                {/*<Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/' >Back to Home!</Link>*/}
+        {/*        /!*<Link className="Caveat waves-effect waves-light btn-large white black-text hoverable" to='/' >Back to Home!</Link>*!/*/}
 
-                {/*<Route render={({ history}) => (*/}
+        {/*        /!*<Route render={({ history}) => (*!/*/}
 
-                {/*        )} />*/}
-                {/*<i className="material-icons centerAlign">thumb_up</i>*/}
+        {/*        /!*        )} />*!/*/}
+        {/*        /!*<i className="material-icons centerAlign">thumb_up</i>*!/*/}
+
+        {/*    </div>*/}
+
+        {/*</div>*/}
+
+        <div id="modal13" className="modal modal-fixed-footer Caveat modal4">
+            <div className="modal-content center center-align">
+                {/*<h4>Your Order Has Been Submitted!</h4>*/}
+                <h4>Your order will go directly to Kyleigh, and she will contact you through the email provided. </h4>
+                <p>Thanks!</p>
 
             </div>
-
+            <div className="modal-footer center center-align">
+                <a  className="modal-action modal-close btn black white-text"  onClick={() => { history.push('/') }}>Back To Home</a>
+                <br/>
+            </div>
         </div>
 
 
@@ -86,7 +99,7 @@ render() {
         <main>
         <div className="center center-align">
 
-            <h1 className=" Caveat">Check Out</h1>
+            <h1 className=" Caveat white-text">Check Out</h1>
             <div className="container">
                 {/*<hr className="rounded "/>*/}
 
@@ -149,7 +162,7 @@ render() {
                     </div>
                     {/*</div>*/}
 
-                    <button className="Caveat waves-effect waves-light btn-large white black-text hoverable"><i
+                    <button className="Caveat btn-large white black-text hoverable"><i
                         className="material-icons right">send</i>Submit Order</button>
 
                 </form>
@@ -169,13 +182,14 @@ render() {
             <div className="container">
                 <div className="row">
                     <div className="col  s6 center-align">
-                        <h5 className="white-text">Rings</h5>
-                        <h5 className="white-text ">Braclets</h5>
-                        <h5 className="white-text ">Necklaces</h5>
+                        <h5 className="white-text " onClick={() => { history.push('/') }}>Home</h5>
+
+                        <h5 className="white-text" onClick={() => { history.push('/Customs') }}>Customs</h5>
+                        <h5 className="white-text " onClick={() => { history.push('/Reviews') }}>Reviews</h5>
 
                     </div>
                     <div className="col  s6 center-align">
-                        <h5 className="white-text">Contact Me About Customs</h5>
+                        <h5 className="white-text" onClick={() => { history.push('/Contact') }}>Contact Me About Customs</h5>
                         <h5 className="white-text">Kyleigh Dague</h5>
                         <h5 className="white-text">Jewelry By Ky</h5>
 

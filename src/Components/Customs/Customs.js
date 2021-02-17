@@ -8,6 +8,7 @@ import photo from "../../pictures/jewelry1.jpg";
 import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
 import M from "materialize-css/dist/js/materialize.min";
+import history from "../../history";
 
 class Customs extends Component {
 
@@ -491,7 +492,7 @@ class Customs extends Component {
 
                 </div>
                 <div className="modal-footer center center-align">
-                    <a  className="modal-action modal-close waves-effect waves-red btn red darken-3">Close</a>
+                    <a  className="modal-action modal-close btn black white-text ">Close</a>
                 </div>
             </div>
 
@@ -737,13 +738,14 @@ class Customs extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col  s6 center-align">
-                            <h5 className="white-text">Rings</h5>
-                            <h5 className="white-text ">Braclets</h5>
-                            <h5 className="white-text ">Necklaces</h5>
+                            <h5 className="white-text " onClick={() => { history.push('/') }}>Home</h5>
+
+                            <h5 className="white-text" onClick={() => { history.push('/Reviews') }}>Reviews</h5>
+                            <h5 className="white-text " onClick={() => { history.push('/MyOrder') }}>My Order</h5>
 
                         </div>
                         <div className="col  s6 center-align">
-                            <h5 className="white-text">Contact Me About Customs</h5>
+                            <h5 className="white-text" onClick={() => { history.push('/Contact') }}>Contact Me About Customs</h5>
                             <h5 className="white-text">Kyleigh Dague</h5>
                             <h5 className="white-text">Jewelry By Ky</h5>
 

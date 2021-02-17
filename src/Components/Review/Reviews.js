@@ -15,6 +15,7 @@ import Review from "./Review";
 import firebase from '../../firebase';
 import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions';
+import history from "../../history";
 
 class Reviews extends Component {
 
@@ -35,7 +36,7 @@ class Reviews extends Component {
 
 
     componentDidMount() {
-        console.log("Reviews 1Poop");
+        // console.log("Reviews 1Poop");
 
         // var elems = document.querySelectorAll('.modal');
 
@@ -215,22 +216,30 @@ class Reviews extends Component {
 
 
 
-                <div id="modal2" className="modal modal-fixed-footer Caveat">
-                    <div className="modal-content center-align">
+
+
+                <div id="modal2" className="modal modal-fixed-footer Caveat modal3">
+                    <div className="modal-content center center-align">
                         <h4>Thanks For The Review!</h4>
                         <p>Your feedback matters!</p>
                         <i className="material-icons centerAlign">thumb_up</i>
-                    </div>
 
+                    </div>
+                    <div className="modal-footer center center-align">
+                        <a  className="modal-action modal-close btn black white-text ">Close</a>
+                    </div>
                 </div>
 
-                <div id="modal3" className="modal modal-fixed-footer Caveat">
-                    <div className="modal-content center-align">
+
+                <div id="modal3" className="modal modal-fixed-footer Caveat modal3">
+                    <div className="modal-content center center-align">
                         <h4>Something went wrong.....</h4>
+                        <i className="material-icons centerAlign">thumb_up</i>
 
-                        <i className="material-icons centerAlign">thumb_down</i>
                     </div>
-
+                    <div className="modal-footer center center-align">
+                        <a  className="modal-action modal-close btn black white-text ">Close</a>
+                    </div>
                 </div>
 
 
@@ -289,15 +298,16 @@ class Reviews extends Component {
 
             <footer className="page-footer black Caveat">
                 <div className="container">
-                    <div className="row s12">
+                    <div className="row">
                         <div className="col  s6 center-align">
-                            <h5 className="white-text">Rings</h5>
-                            <h5 className="white-text ">Braclets</h5>
-                            <h5 className="white-text ">Necklaces</h5>
+                            <h5 className="white-text " onClick={() => { history.push('/') }}>Home</h5>
+
+                            <h5 className="white-text" onClick={() => { history.push('/Customs') }}>Customs</h5>
+                            <h5 className="white-text " onClick={() => { history.push('/MyOrder') }}>My Order</h5>
 
                         </div>
                         <div className="col  s6 center-align">
-                            <h5 className="white-text">Contact Me About Customs</h5>
+                            <h5 className="white-text" onClick={() => { history.push('/Contact') }}>Contact Me About Customs</h5>
                             <h5 className="white-text">Kyleigh Dague</h5>
                             <h5 className="white-text">Jewelry By Ky</h5>
 

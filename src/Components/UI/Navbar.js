@@ -40,7 +40,7 @@ class Navbar extends Component{
 
                             <a href="/" data-target="mobile-demo" className="sidenav-trigger">
                                 <i className="material-icons white-text left">menu</i></a>
-                            <ul className="center hide-on-med-and-down ">
+                            <ul className="right hide-on-med-and-down ">
                                 <div className="Caveat ">
                                     <li  ><NavLink  to='/' exact >Home</NavLink></li>
                                     {/*<li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>*/}
@@ -57,13 +57,13 @@ class Navbar extends Component{
                         </div>
                     </nav>
 
-                    <ul className="sidenav sidenav-close  navimg" id="mobile-demo">
-                        <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>
+                    <ul className="sidenav sidenav-close  navimg Caveat " id="mobile-demo">
+                        <li  ><NavLink className="white-text hoverable sizeFont1"  to='/' exact >Home</NavLink></li>
                         {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
-                        <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs - Create Your Own!</NavLink></li>
-                        <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>
+                        <li ><NavLink className="white-text hoverable sizeFont1"  to='/Customs' exact >Customs - Create Your Own!</NavLink></li>
+                        <li ><NavLink className="white-text hoverable sizeFont1" to='/Reviews' exact >Reviews</NavLink></li>
                         {/*<li ><NavLink className="white-text hoverable" to='/MyOrder' exact ><i className="material-icons ">shopping_cart</i></NavLink></li>*/}
-                        <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>
+                        <li ><NavLink className="white-text hoverable sizeFont1" to='/Contact' exact >Contact Me</NavLink></li>
 
                     </ul>
 
@@ -112,7 +112,7 @@ class Navbar extends Component{
 
                         <a href="/" data-target="mobile-demo" className="sidenav-trigger">
                             <i className="material-icons white-text left">menu</i></a>
-                        <ul className="center hide-on-med-and-down ">
+                        <ul className="right hide-on-med-and-down ">
                             <div className="Caveat ">
                                 <li  ><NavLink  to='/' exact >Home</NavLink></li>
                                 {/*<li ><NavLink  to='/Catalog' exact >Gallery</NavLink></li>*/}
@@ -128,13 +128,13 @@ class Navbar extends Component{
                     </div>
                 </nav>
 
-                <ul className="sidenav sidenav-close  navimg" id="mobile-demo">
-                    <li  ><NavLink className="white-text hoverable"  to='/' exact >Home</NavLink></li>
+                <ul className="sidenav sidenav-close  navimg Caveat sizeFont1" id="mobile-demo">
+                    <li  ><NavLink className="white-text hoverable sizeFont1"  to='/' exact >Home</NavLink></li>
                     {/*<li ><NavLink className="white-text hoverable" to='/Catalog' exact >Gallery</NavLink></li>*/}
-                    <li ><NavLink className="white-text hoverable"  to='/Customs' exact >Customs - Create Your Own!</NavLink></li>
-                    <li ><NavLink className="white-text hoverable" to='/Reviews' exact >Reviews</NavLink></li>
+                    <li ><NavLink className="white-text hoverable sizeFont1"  to='/Customs' exact >Customs - Create Your Own!</NavLink></li>
+                    <li ><NavLink className="white-text hoverable sizeFont1" to='/Reviews' exact >Reviews</NavLink></li>
                     {/*<li ><NavLink className="white-text hoverable" to='/MyOrder' exact >Cart: {this.props.numItems}</NavLink></li>*/}
-                    <li ><NavLink className="white-text hoverable" to='/Contact' exact >Contact Me</NavLink></li>
+                    <li ><NavLink className="white-text hoverable sizeFont1" to='/Contact' exact >Contact Me</NavLink></li>
 
                 </ul>
                 {/*<div className="fixed-action-btn horizontal click-to-toggle hide-on-large-only">*/}

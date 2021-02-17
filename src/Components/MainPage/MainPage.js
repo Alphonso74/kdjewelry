@@ -20,6 +20,7 @@ import linky2 from '../../pictures/jewhand.jpg';
 import linky3 from '../../pictures/jewelry.jpeg';
 import linky4 from '../../pictures/jewelry1.jpg';
 import linky5 from '../../pictures/jewelry3.jpg';
+import history from '../../history';
 
 
 
@@ -388,13 +389,13 @@ class MainPage extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col  s6 center-align">
-                                <h5 className="white-text">Customs</h5>
-                                <h5 className="white-text ">Reviews</h5>
-                                <h5 className="white-text ">Orders</h5>
+                                <h5 className="white-text" onClick={() => { history.push('/Customs') }}>Customs</h5>
+                                <h5 className="white-text " onClick={() => { history.push('/Reviews') }}>Reviews</h5>
+                                <h5 className="white-text " onClick={() => { history.push('/MyOrder') }}>Orders</h5>
 
                             </div>
                             <div className="col  s6 center-align">
-                                <h5 className="white-text">Contact Me About Customs</h5>
+                                <h5 className="white-text" onClick={() => { history.push('/Contact') }}>Contact Me About Customs</h5>
                                 <h5 className="white-text">Kyleigh Dague</h5>
                                 <h5 className="white-text">Jewelry By Ky</h5>
 
